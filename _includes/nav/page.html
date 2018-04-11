@@ -1,0 +1,15 @@
+<!-- in page nav if page has sections in front-matter -->
+
+{% assign nav-sections = page.sections %}
+
+<div class="page-nav">
+  <div class="page-nav__scroll-wrap">
+    <div class="page-nav__wrap">
+      {% for nav-section in nav-sections %}
+      <span class="page-nav__item">
+        <a class="page-nav__link" href="#{% if nav-section.id %}{{nav-section.id}}{% else %}{{nav-section.title|slugify}}{% endif %}">{{nav-section.title}}</a>
+      </span>
+      {% endfor %}
+    </div>
+  </div>
+</div>

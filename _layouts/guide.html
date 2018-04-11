@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+{% include page/header-minimal.html %}
+
+
+
+<div class="guide-banner">
+  <div class="guide-banner__content">
+    <div class="boxpad--xxl">
+      <h1 class="title title--xxxl text--bolder">{{page.banner.title}}</h1>
+      <hr class="hr--left">
+      <p class="text--xl">{{page.banner.content}}</p>
+      <div class="space--md"></div>
+      <a href="#pagecontent" class="btn btn--solid">⇣</a>
+    </div>
+  </div>
+  <div class="guide-banner__bg" style="background-image:url({{site.img}}/map.jpg);"></div>
+</div>
+
+
+
+
+<div class="content-spacing section-spacing bg--grey-lightest">
+  <div class="wp" id="pagecontent"></div>
+
+  {{ content }}
+
+</div>
+
+{% include page/footer.html %}

@@ -1,0 +1,84 @@
+---
+layout: standard
+id: overview
+nav: true
+nav-order: 1
+title: Overview
+
+banner:
+  title-sup: Undiscovered
+  title: Germany
+
+intro: >
+  <p class="text--xl">Curabitur blandit tempus porttitor. Aenean lacinia bibendum nulla sed consectetur. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+
+experts:
+
+  - title: Expert name
+    subtitle: Expert subtitle
+    content: Expert's recommendation. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod.
+
+  - title: Expert name
+    subtitle: Expert subtitle
+    content: Expert's recommendation. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod.
+
+  - title: Expert name
+    subtitle: Expert subtitle
+    content: Expert's recommendation. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod.
+
+---
+
+
+
+<div class="vpad--xxl bg--grey-lightest">
+  <div class="container container--xxl text--center">
+    <p class="text--xxl text--italic">What makes Germany so exciting to explore? We get some tips from locals on how to discover the real Germany.</p>
+  </div>
+  <div class="container">
+    {% for expert in page.experts %}
+    <div class="bob{% cycle '',' bob--swap' %}">
+
+      <div class="bob__img">
+        <a href="#image-link">
+          <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/img.jpg');"></div>
+        </a>
+      </div>
+
+      <div class="bob__text">
+        <h3 class="title title--md text--bolder">{{expert.title}}</h3>
+        <h5 class="title title--xxs text--bolder">{{expert.subtitle}}</h5>
+        <hr class="hr--left">
+        <p class="text--lg text--italic">"{{expert.content}}"</p>
+      </div>
+
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+
+{% assign cities = site.html_pages | where:'layout','city' %}
+<div class="bg--grey-darkest text--white text--center">
+  <div class="container vpad--xxl">
+    <h2 class="title title--xl text--bolder">Start exploring in...</h2>
+  </div>
+</div>
+
+<div class="container--100">
+  <div class="row row--6-6 row--no-gutters">
+    {% for city in cities %}
+    <div class="col">
+      <a href="{{site.baseurl}}{{city.url}}" class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/img.jpg');">
+        <div class="bg-img__content text--white">
+          <h3 class="title title--xl text--bolder">{{city.title}}</h3>
+          <hr class="hr--center">
+          <p class="text--xl">{{city.banner.content|truncate:120}}</p>
+        </div>
+        <div class="bg-img__content bg-img__content-hover">
+          <span class="btn btn--outline btn--outline-white">Explore {{city.title}}</span>
+        </div>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</div>

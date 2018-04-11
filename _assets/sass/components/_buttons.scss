@@ -1,0 +1,59 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: $s2 $s5;
+  color: $white;
+  font-weight: 600;
+  font-size: $s-1;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .25em;
+  line-height: 1.33;
+  border-radius: 3px;
+  cursor: pointer;
+  @include transition;
+  &--sm { padding: $s1 $s4; font-size: $s-2; }
+  &--lg { padding: $s3 $s8; font-size: $s-1; }
+
+  // BUTTON STYLES
+  &--orange { background-color: $orange;
+    &:hover { background-color: $orange-dark; }
+  }
+  &--solid { background-color: $b-red;
+    &:hover { background-color: $b-red; }
+  }
+  
+  // OUTLINE BTNS
+  &--outline {
+    color: inherit;
+    &:before {
+      // button border within original padding
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-width: 1px;
+      border-style: solid;
+      border-radius: inherit;
+      @include transition;
+    }
+  }
+  &--outline-orange {
+    &:before { border-color: $orange; }
+    &:hover {
+      background-color: $orange;
+      &:before { border-color: $orange; }
+    }
+  }
+  &--outline-white {
+    &:before { border-color: $white; }
+    &:hover {
+      color: $grey-darkest;
+      background-color: $white;
+      &:before { border-color: $white; }
+    }
+  }
+
+}
