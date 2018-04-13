@@ -2,21 +2,23 @@
 layout: default
 ---
 
-{% include page/header-minimal.html %}
+{% include page/header-site-nav.html %}
 
 
 
 <div class="guide-banner">
   <div class="guide-banner__content">
     <div class="boxpad--xxl">
-      <h1 class="title title--xxxl text--bolder">{{page.banner.title}}</h1>
+      <div class="site-header__offset"></div>
+      <div class="site-nav__offset"></div>
+      <h1 class="title title--xxxl text--600">{{page.banner.title}}</h1>
       <hr class="hr--left">
       <p class="text--xl">{{page.banner.content}}</p>
       <div class="space--md"></div>
       <a href="#pagecontent" class="btn btn--solid">⇣</a>
     </div>
   </div>
-  <div class="guide-banner__bg" style="background-image:url({{site.img}}/map.jpg);"></div>
+  <div class="guide-banner__bg" style="background-image:url({{site.img}}/banner/{{page.id}}.jpg);"></div>
 </div>
 
 

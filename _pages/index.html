@@ -45,8 +45,8 @@ experts:
       </div>
 
       <div class="bob__text">
-        <h3 class="title title--md text--bolder">{{expert.title}}</h3>
-        <h5 class="title title--xxs text--bolder">{{expert.subtitle}}</h5>
+        <h3 class="title title--md text--600">{{expert.title}}</h3>
+        <h5 class="title title--xxs text--600">{{expert.subtitle}}</h5>
         <hr class="hr--left">
         <p class="text--lg text--italic">"{{expert.content}}"</p>
       </div>
@@ -57,10 +57,10 @@ experts:
 </div>
 
 
-{% assign cities = site.html_pages | where:'layout','city' %}
+{% assign cities = site.html_pages | where:'layout','city' | sort:'nav-order' %}
 <div class="bg--grey-darkest text--white text--center">
-  <div class="container vpad--xxl">
-    <h2 class="title title--xl text--bolder">Start exploring in...</h2>
+  <div class="container vpad--lg">
+    <h2 class="title title--md text--600">Start exploring in...</h2>
   </div>
 </div>
 
@@ -68,15 +68,16 @@ experts:
   <div class="row row--6-6 row--no-gutters">
     {% for city in cities %}
     <div class="col">
-      <a href="{{site.baseurl}}{{city.url}}" class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/img.jpg');">
+      <a href="{{site.baseurl}}{{city.url}}" class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/banner/{{city.id}}.jpg');">
         <div class="bg-img__content text--white">
-          <h3 class="title title--xl text--bolder">{{city.title}}</h3>
+          <h3 class="title title--xl text--600">{{city.title}}</h3>
           <hr class="hr--center">
           <p class="text--xl">{{city.banner.content|truncate:120}}</p>
         </div>
         <div class="bg-img__content bg-img__content-hover">
           <span class="btn btn--outline btn--outline-white">Explore {{city.title}}</span>
         </div>
+        <div class="bg-img__bg-overlay"></div>
       </a>
     </div>
     {% endfor %}

@@ -13,6 +13,7 @@ body, html { height: 100%; }
 *:before {
   box-sizing: border-box;
   font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
 

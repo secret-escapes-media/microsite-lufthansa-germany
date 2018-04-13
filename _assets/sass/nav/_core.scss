@@ -32,13 +32,6 @@ $core-nav-padding-sm: 1rem;
     @include core-nav-height;
   }
 
-  &--minimal {
-    height: 54px;
-    min-height: 54px;
-    & .logo--se { width: 150px; }
-    & .logo--partner { width: 100px; }
-  }
-
 }
 
 

@@ -8,7 +8,13 @@ layout: guide
     {{page.intro}}
   </div>
   <div class="container container--xxxl">
-    <div class="bg-img bg-img--21-9" style="background-image: url({{site.img}}/img.jpg);"></div>
+    <div class="bg-img bg-img--21-9" style="background-image: url({{site.img}}/map.jpg);">
+      <div class="bg-img__content bg-img__content-hover">
+        <span class="title title--lg">Interactive map</span>
+        <div class="space--lg"></div>
+        <span class="btn btn--outline btn--outline-white btn--lg">Explore {{page.title}}</span>
+      </div>
+    </div>
     <div class="container container--xxl vpad--lg bg--white">
       <p class="text--xxl text--italic">This Bavarian metropolis has many an unexpected card down its Dirndl.</p>
     </div>
@@ -20,7 +26,7 @@ layout: guide
 <div class="container">
 
   <div class="container container--xxl">
-    <h2 class="title title--xl text--bolder">{{section.title}}</h2>
+    <h2 class="title title--xl text--600">{{section.title}}</h2>
     <p class="text--xl">{{section.content}}</p>
     <div class="space--xl"></div>
   </div>
@@ -31,7 +37,7 @@ layout: guide
       <div class="boxpad--lg">
         <div class="bg-img bg-img--16-9" style="background-image: url({{site.img}}/img.jpg);"></div>
         <div class="space--sm"></div>
-        <h4 class="title title--xs text--bolder">{{poi.title}}</h4>
+        <h4 class="title title--xs text--600">{{poi.title}}</h4>
         <p>{{poi.content}}</p>
       </div>
     </div>
@@ -47,7 +53,7 @@ layout: guide
 <div class="container">
 
   <div class="container container--xxl">
-    <h2 class="title title--xl text--bolder">{{page.title}} offers</h2>
+    <h2 class="title title--xl text--600">{{page.title}} offers</h2>
     <div class="space--xl"></div>
   </div>
 
@@ -66,21 +72,19 @@ layout: guide
 
 
 
-{% assign cities = site.html_pages | where:'layout','city' %}
+{% assign nextpage = site.html_pages | where:'id',page.nextpage-id %}
 <div class="container--100">
-  {% for city in cities %}
-  {% unless city.id == page.id %}
-  <a href="{{site.baseurl}}{{city.url}}" class="bg-img bg-img--4-1" style="background-image: url('{{site.img}}/img.jpg');">
+  {% for nextpage in nextpage %}
+  <a href="{{site.baseurl}}{{nextpage.url}}" class="bg-img bg-img--4-1" style="background-image: url('{{site.img}}/banner/{{nextpage.id}}.jpg');">
     <div class="bg-img__content bg-img__content-hover">
-      <h3 class="title title--xxl text--bolder">Up next</h3>
+      <h3 class="title title--xxl text--600">Keep exploring</h3>
     </div>
     <div class="bg-img__content">
       <div class="container">
-        <h3 class="title title--xl text--bolder">{{city.title}}</h3>
-        <p class="text--lg">{{city.banner.content|truncate:120}}</p>
+        <h3 class="title title--xl text--600">{{nextpage.title}}</h3>
+        <p class="text--lg">{{nextpage.intro|truncate:120}}</p>
       </div>
     </div>
   </a>
-  {% endunless %}
   {% endfor %}
 </div>
