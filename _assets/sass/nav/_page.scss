@@ -19,17 +19,19 @@ $nav-text-color:     $grey-darker;
 }
 
 .page-nav {
-  position: relative;
+  position: absolute;
+  width: 100%;
+  top: 0; left: 0;
   background-color: rgba($nav-color,.8);
   border-top: 1px solid $nav-border-color;
   border-bottom: 1px solid $nav-border-color;
   text-align: center;
 
-  // NEEDS EXPLAINING LIKE THE CORE NAV OFFSET
-  &__offset:before {
-    // corrects header overlapping content
-    content: '';
+
+  &__container {
     display: block;
+    position: relative;
+    width: 100%;
     @include page-nav-height;
   }
 

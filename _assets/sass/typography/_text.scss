@@ -9,6 +9,7 @@
 
   // styles
   &--italic       { font-style: italic; }
+  &--kern    { letter-spacing: .05em; }
   &--wide-kern    { letter-spacing: .15em; }
   &--wide-kern-lg { letter-spacing: .3em; }
   &--upper        { text-transform: uppercase; }

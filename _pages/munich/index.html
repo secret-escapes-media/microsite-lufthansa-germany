@@ -1,27 +1,45 @@
 ---
-layout: city
+layout: guide
 id: munich
 nav: true
 nav-order: 2
 title: Munich
 
-page.nextpage-id: frankfurt
+
+nextpage-id: frankfurt
+
+
+page-nav:
+  - id: map
+    title: Map
+  - id: gourmet-cuisine
+    title: Gourmet Cuisine
+  - id: green-city
+    title: Green city
+
 
 
 banner:
   title: Munich
-  content: Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero.
+  title-sub: Maecenas sed diam eget risus varius
 
 
-intro: >
-  <h3 class="title title--lg text--600">Bavarian heritage</h3>
-  <p class="text--xl">Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius blandit sit amet non magna. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam porta sem malesuada magna mollis euismod.</p>
+intro: Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius blandit sit amet non magna. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam porta sem malesuada magna mollis euismod.
 
+
+expert-intro: >
+  <h4 class="title title--xs">Meet <span class="text--500">Expert name</span></h4>
+  <p class="text--lg">Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+
+
+map-url: "https://www.google.com/maps/d/embed?mid=1BSw3wsDC9daCBgaRMvEZJ4enuYhbbwco&hl=en&ll=48.1332409,11.5816596&z=14&scrollwhell=true"
+map-intro: Explore Munich highlights and offers
 
 
 sections:
 
-  - title: Feature 1
+  - title: Gourmet Cuisine
+    id: gourmet-cuisine
     content: Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
     pois:
       - title: POI title
@@ -30,9 +48,12 @@ sections:
         content: Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       - title: POI title
         content: Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    expert-tip: >
+      <p class="text--lg">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue. </p>
 
 
-  - title: Feature 2
+  - title: Green city
+    id: green-city
     content: Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
     pois:
       - title: POI title
@@ -41,16 +62,8 @@ sections:
         content: Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       - title: POI title
         content: Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    expert-tip: >
+      <p class="text--lg">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue. </p>
 
-
-  - title: Feature 3
-    content: Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-    pois:
-      - title: POI title
-        content: Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      - title: POI title
-        content: Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      - title: POI title
-        content: Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
 ---

@@ -1,0 +1,67 @@
+
+// ---------- Game ----------
+.game {
+
+  // GAME INTRO COPY, AND RESULTS TEXT
+  &__intro {
+  }
+  &__complete-text {
+    display: none;
+    .q { font-weight: 600; }
+  }
+
+  // GAME QUESTIONS
+  &__questions {
+    position: relative;
+    margin-bottom: $s2;
+  }
+  &__question {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 1em; right: 1em;
+    padding-left: 1em; padding-right: 1em;
+    @include bp(large){
+      left: 2em; right: 2em;
+    }
+    &--active {
+      position: relative;
+      top: 0;
+      left: 0; right: 0;
+      display: block;
+    }
+    &-options { margin-top: $s2/2; }
+  }
+
+  // RESULTS SECTION
+  &__result {
+    display: none;
+  }
+
+  // disable reset game button until game is played
+  .game__start-btn { display: none; }
+  .game__reset-btn { display: none; }
+
+  /*======  CHANGES ON GAME COMPLETE // .game--complete  ======*/
+  &--complete {
+    .game__questions { display: none; }
+    .game__complete-text { display: block; }
+    .game__result { display: block; }
+    .offer--selected { display: block; }
+    .offer--eliminated { display: none; }
+    .game__start-btn { display: none; }
+    .game__reset-btn { display: inline-block; }
+    .game__viewoffers-btn { display: inline-block; }
+  }
+  /*======  CHANGES ON GAME COMPLETE // .game--complete  ======*/
+  &--viewoffers {
+    .game__questions { display: none; }
+    .game__complete-text { display: none; }
+    .game__result { display: block; }
+    .offer { display: block; }
+    .game__start-btn { display: inline-block; }
+    .game__reset-btn { display: none; }
+    .game__viewoffers-btn { display: none; }
+  }
+
+}

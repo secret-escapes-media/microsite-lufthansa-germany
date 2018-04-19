@@ -4,9 +4,7 @@
 
   // custom content headline
   font-family: $font-title-01;
-  font-weight: 400;
   @include font-smoothing;
-  &--display { font-family: $font-title-02; }
 
   &--banner { font-size: $s9; line-height: 1.033; }
   &--xxxxl  { font-size: $s9; line-height: 1.033; }
@@ -20,7 +18,7 @@
   &--xxs    { font-size: $s1; line-height: 1.4; }
   &--xxxs   { font-size: $s0; line-height: 1.45; }
   @include bp($lg){
-    &--banner { font-size: $s13; }
+    &--banner { font-size: $s11; }
     &--xxxxl  { font-size: $s11; }
     &--xxxl   { font-size: $s9; }
     &--xxl    { font-size: $s8; }

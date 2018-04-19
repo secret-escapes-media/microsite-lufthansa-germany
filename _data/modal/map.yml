@@ -1,0 +1,15 @@
+
+
+
+- id: munich-map
+  title: Munich map
+  map: true
+  pages:
+    - id: munich
+
+
+- id: frankfurt-map
+  title: Frankfurt map
+  map: true
+  pages:
+    - id: frankfurt

@@ -1,0 +1,28 @@
+
+
+
+- id: iceland-video
+  youtube-id: JQTv4JczS-M
+  page: journey
+  pages:
+    - id: overview
+    - id: iceland
+
+
+
+- id: morocco-video
+  youtube-id: aRtlRuBWv7U
+  page: journey
+  pages:
+    - id: overview
+    - id: morocco
+
+
+
+- id: new-york-video
+  youtube-id: ElLHwYHnqxQ
+  page: journey
+  pages:
+    - id: overview
+    - id: new-york
+

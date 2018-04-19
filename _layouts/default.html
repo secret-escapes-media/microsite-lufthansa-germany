@@ -7,7 +7,15 @@
 
     {% include components/tracking.html %}
 
-    {{ content }}
+    {% include page/header.html %}
+
+    {% include page/banner.html %}
+
+    <div class="content-spacing section-spacing">
+      {{ content }}
+    </div>
+
+    {% include page/footer.html %}
 
     {% include modal/modal.html %}
 

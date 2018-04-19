@@ -6,9 +6,9 @@
       {{page.banner.content | liquify}}
     {% else %}
       <div class="container text--center">
-        {% if page.banner.title-sup %}<h2 class="title title--sm text--wide-kern text--upper text--500">{{page.banner.title-sup}}</h2>{% endif %}
-        <h1 class="title title--banner text--400 title--display">{% if page.banner.title %}{{page.banner.title}}{% else %}{{page.title}}{% endif %}</h1>
-        {% if page.banner.title-sub %}<h2 class="title title--sm text--wide-kern text--upper">{{page.banner.title-sub}}</h2>{% endif %}
+        {% if page.banner.title-sup %}<h2 class="title title--md text--wide-kern text--upper text--300">{{page.banner.title-sup}}</h2>{% endif %}
+        <h1 class="title title--banner text--upper text--700 text--kern">{% if page.banner.title %}{{page.banner.title}}{% else %}{{page.title}}{% endif %}</h1>
+        {% if page.banner.title-sub %}<h2 class="title title--md">{{page.banner.title-sub}}</h2>{% endif %}
       </div>
     {% endif %}
   </div>

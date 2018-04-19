@@ -1,25 +1,46 @@
 ---
-layout: city
+layout: guide
 id: frankfurt
 nav: true
 nav-order: 3
 title: Frankfurt
 
-page.nextpage-id: flights
+nextpage-id: flights
+
+
+page-nav:
+  - id: map
+    title: Map
+  - id: domromer
+    title: DomRömer Quarter
+  - id: character-2
+    title: Character 2
+
 
 
 banner:
   title: Frankfurt
-  content: Maecenas sed diam eget risus varius blandit sit amet non magna. Nulla vitae elit libero.
+  title-sub: Maecenas sed diam eget risus varius
 
-intro: >
-  <p class="text--xl">Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius blandit sit amet non magna. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam porta sem malesuada magna mollis euismod.</p>
+
+intro: Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius blandit sit amet non magna. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam porta sem malesuada magna mollis euismod.
+
+
+expert-intro: >
+  <h4 class="title title--xs">Meet <span class="text--500">Expert name</span></h4>
+  <p class="text--lg">Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+
+
+
+map-url: "https://www.google.com/maps/d/u/0/embed?mid=13DM3OV4FDLQzQ9uJkpau8xBMdd5cisMa&ll=50.113234537141,8.668406985424781&z=14"
+map-intro: Explore Frankfurt highlights and offers
 
 
 
 sections:
 
-  - title: Feature 1
+  - title: DomRömer Quarter
+    id: domromer
     content: >
       <p class="text--lg">Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     pois:
@@ -29,9 +50,12 @@ sections:
         content: Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       - title: POI title
         content: Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    expert-tip: >
+      <p class="text--lg">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue. </p>
 
 
-  - title: Feature 2
+  - title: City character
+    id: character-2
     content: >
       <p class="text--lg">Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     pois:
@@ -41,18 +65,8 @@ sections:
         content: Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       - title: POI title
         content: Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-
-  - title: Feature 3
-    content: >
-      <p class="text--lg">Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    pois:
-      - title: POI title
-        content: Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      - title: POI title
-        content: Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      - title: POI title
-        content: Donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    expert-tip: >
+      <p class="text--lg">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue. </p>
 
 
 ---

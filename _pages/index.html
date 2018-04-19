@@ -1,5 +1,5 @@
 ---
-layout: standard
+layout: default
 id: overview
 nav: true
 nav-order: 1
@@ -12,74 +12,52 @@ banner:
 intro: >
   <p class="text--xl">Curabitur blandit tempus porttitor. Aenean lacinia bibendum nulla sed consectetur. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
 
-experts:
-
-  - title: Expert name
-    subtitle: Expert subtitle
-    content: Expert's recommendation. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod.
-
-  - title: Expert name
-    subtitle: Expert subtitle
-    content: Expert's recommendation. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod.
-
-  - title: Expert name
-    subtitle: Expert subtitle
-    content: Expert's recommendation. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod.
+page-links:
+  - id: munich
+  - id: frankfurt
+  - id: flights
 
 ---
 
 
-
-<div class="vpad--xxl bg--grey-lightest">
-  <div class="container container--xxl text--center">
-    <p class="text--xxl text--italic">What makes Germany so exciting to explore? We get some tips from locals on how to discover the real Germany.</p>
+<div class="bg--grey-darker vpad--xxl">
+  <div class="container container--xxl text--white text--center">
+    {{page.intro}}
   </div>
+</div>
+
+
+<div class="bg--grey-darkest text--white vpad--xxl">
   <div class="container">
-    {% for expert in page.experts %}
-    <div class="bob{% cycle '',' bob--swap' %}">
 
-      <div class="bob__img">
-        <a href="#image-link">
-          <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/img.jpg');"></div>
-        </a>
-      </div>
-
-      <div class="bob__text">
-        <h3 class="title title--md text--600">{{expert.title}}</h3>
-        <h5 class="title title--xxs text--600">{{expert.subtitle}}</h5>
-        <hr class="hr--left">
-        <p class="text--lg text--italic">"{{expert.content}}"</p>
-      </div>
-
-    </div>
-    {% endfor %}
-  </div>
-</div>
-
-
-{% assign cities = site.html_pages | where:'layout','city' | sort:'nav-order' %}
-<div class="bg--grey-darkest text--white text--center">
-  <div class="container vpad--lg">
-    <h2 class="title title--md text--600">Start exploring in...</h2>
-  </div>
-</div>
-
-<div class="container--100">
-  <div class="row row--6-6 row--no-gutters">
-    {% for city in cities %}
-    <div class="col">
-      <a href="{{site.baseurl}}{{city.url}}" class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/banner/{{city.id}}.jpg');">
-        <div class="bg-img__content text--white">
-          <h3 class="title title--xl text--600">{{city.title}}</h3>
-          <hr class="hr--center">
-          <p class="text--xl">{{city.banner.content|truncate:120}}</p>
+    {% for pglink in page.page-links %}
+      {% assign subpage = site.html_pages | where:'id',pglink.id %}
+      {% for subpage in subpage %}
+      <div class="bob {% cycle '','bob--swap' %}">
+        <div class="bob__img">
+          <a href="{{site.baseurl}}{{subpage.url}}" class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/banner/{{subpage.id}}.jpg');"></a>
         </div>
-        <div class="bg-img__content bg-img__content-hover">
-          <span class="btn btn--outline btn--outline-white">Explore {{city.title}}</span>
+        <div class="bob__text">
+          <h3 class="title title--xl text--600">{{subpage.title}}</h3>
+          <p class="text--lg">{{subpage.intro|truncate:200}}</p>
+          <div class="space--md"></div>
+          <a class="btn btn--outline btn--outline-white">Find out more</a>
         </div>
-        <div class="bg-img__bg-overlay"></div>
-      </a>
-    </div>
+      </div>
+      {% endfor %}
     {% endfor %}
+
+
   </div>
 </div>
+
+
+<div class="bg--fixed vpad--xxxl" style="background-image: url({{site.img}}/content/banner-game.jpg);">
+  <div class="container container--xxl text--white text--center">
+    <h2 class="title title--xl text--700">Play our game</h2>
+    <p class="text--xl">Play our game to find your perfect German holiday and some personal travel ideas...</p>
+    <div class="space--sm"></div>
+    <a href="{{site.baseurl}}/trip-planner" class="btn btn--lg btn--solid">Discover now</a>
+  </div>
+</div>
+

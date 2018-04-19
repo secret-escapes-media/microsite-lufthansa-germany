@@ -47,4 +47,15 @@
     @include transition;
   }
   &:hover &__bg-overlay { background-color: rgba($black,.6); }
+
+  // play button
+  &__play {
+    $play-size: 100px;
+    background-image: url('../img/icons/play.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: $play-size;
+    height: $play-size;
+  }
 }

@@ -20,9 +20,12 @@
     &:hover { background-color: $orange-dark; }
   }
   &--solid { background-color: $b-red;
-    &:hover { background-color: $b-red; }
+    &:hover { background-color: darken($b-red,5); }
   }
-  
+  &--lufthansa { background-color: $lufthansa;
+    &:hover { background-color: darken($lufthansa,10); }
+  }
+
   // OUTLINE BTNS
   &--outline {
     color: inherit;

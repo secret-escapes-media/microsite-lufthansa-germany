@@ -1,0 +1,65 @@
+
+########## QUESTIONS ##########
+
+
+
+- question: Question 1?
+  number: 1
+  options:
+    - title: Relax
+      description: Kick-back under the palm trees and sink into spa treatments for a truly relaxing stay
+      result-description: a relaxed holiday
+    - title: Active
+      description: From water skiing to scuba diving, you'll never tire of adrenalin filled activities
+      result-description: an active holiday
+
+
+
+- question: Question 2?
+  number: 2
+  options:
+    - title: Private and restful
+      description: Your ideal holiday involves peace and quiet and taking time to replenish oneself
+      result-description: private and restful
+    - title: Lively and social
+      description: You love to mingle and throw yourself into a party atmosphere
+      result-description: lively and social
+
+
+
+- question: Question 3?
+  number: 3
+  options:
+    - title: Lush tropical gardens
+      description: You love walking tropical gardens ripe with colourful fruits and rich flowers
+      result-description: lush grounds
+    - title: Beach
+      description: Gardens don’t do much for you but long sandy beaches are a must
+      result-description: a beach
+
+
+
+- question: Question 4?
+  number: 4
+  options:
+    - title: Beach club
+      description: Hang out over the water sipping cocktails and watching the sun set, for idyllic moments of effortless beauty
+      result-description: beach club
+    - title: Golf
+      description: You love soaking up balmy weather and putting a few away at the golf course
+      result-description: golf course
+
+
+
+- question: Question 5?
+  number: 5
+  options:
+    - title: Self-sufficient
+      description: You’re happy to be left to your own devices, to have complete privacy and to make your holiday yours
+      result-description: are self-sufficient
+    - title: Butler service
+      description: You want to feel non-stop pampered
+      result-description: would like to be pampered
+
+
+
