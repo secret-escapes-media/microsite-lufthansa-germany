@@ -25,6 +25,9 @@
   &--lufthansa { background-color: $lufthansa;
     &:hover { background-color: darken($lufthansa,10); }
   }
+  &--white { background-color: $white; color: $grey-darkest;
+    &:hover { background-color: rgba($white,0.9); }
+  }
 
   // OUTLINE BTNS
   &--outline {

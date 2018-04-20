@@ -1,5 +1,5 @@
 ---
-layout: game
+layout: default
 id: trip-planner
 title: Trip Planner
 nav: true
@@ -10,85 +10,15 @@ intro: >
 
 ---
 
-
-<div class="game container" id="game">
-
-  <!-- INTRO -->
-  <div class="vpad--xl text--center game__intro">
+<div class="vpad--xxl">
+  <div class="container container--xxl text--center">
 
     <h1 class="title title--md text--wide-kern text--upper text--bold">Find your perfect German break</h1>
     <p class="text--lg">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Duis mollis, est non commodo luctus.</p>
 
   </div>
 
-
-  <!-- CONTAINER FOR ALL QUESTIONS -->
-  <div class="game__questions">
-
-    <!-- loop QUESTIONS -->
-    {% assign game = site.data.game %}
-    {% for question in game %}
-
-    <div class="game__question{% if forloop.first %} game__question--active{% endif %}">
-
-      <!-- question -->
-      <span class="title title--xs">
-        <span class="text--bold">{{ forloop.index }}.</span>
-        {{ question.question }}
-      </span>
-
-      <!-- options -->
-      <div class="game__question-options">
-        <div class="row">
-          {% for option in question.options %}
-          <div class="col col--6">
-            <a
-              href="javascript:void(0);" class="game__answer invert-text bg-img bg-img--16-9 text--white" style="background-image: url({{ site.img }}/img.jpg);" data-question="{{ question.number }}" data-answer="{% cycle 'a','b' %}" data-answer-description="{{ option.result-description }}">
-              <span class="bg-img__content">
-                <h4 class="bg-img__content__title bg-img__content__title-fade title title--xs text--upper">{{ option.title }}</h4>
-                <p class="bg-img__content__description p--lead">{{ option.description }}</p>
-              </span>
-            </a>
-          </div>
-          {% endfor %}
-        </div>
-      </div>
-
-    </div>
-    {% endfor %}
-    <!-- end .game__question loop -->
-  </div><!-- end .game__questions -->
-
-
-  <div class="game__result text--center">
-
-    <div class="game__complete-text">
-      <h2 class="title title--sm text--upper">Your results</h2>
-      <p class="text--lg">
-        You would like <span class="q q1">...</span>, that is <span class="q q2">...</span>, near <span class="q q3">...</span> with a <span class="q q4">...</span> and <span class="q q5">...</span>.
-      </p>
-    </div>
-
-    <div class="vpad--sm">
-      <a href="javascript:void(0);" class="game__reset game__start-btn btn btn--sm btn--solid">Play the game</a>
-      <a href="javascript:void(0);" class="game__reset game__reset-btn btn btn--sm btn--solid">Play again?</a>
-      <hr class="hr--center" />
-    </div>
-
-    <div class="vpad--sm">
-      {% for offer in site.data.offers %}
-        {% include offer/game-offer.html %}
-        <div class="space--sm"></div>
-      {% endfor %}
-    </div>
+  <div class="container container--xxl text--center">
+    <img src="{{site.img}}/game.jpg">
   </div>
-
-
-  <div class="vpad--sm text--center game__footer">
-    <a href="javascript:void(0);" class="game__reset game__start-btn btn btn--sm btn--solid">Play the game</a>
-    <a href="javascript:void(0);" class="game__reset game__reset-btn btn btn--sm btn--solid">Play again?</a>
-    <a href="javascript:void(0);" class="game__viewoffers game__viewoffers-btn btn btn--sm btn--solid">View all offers</a>
-  </div>
-
-
 </div>

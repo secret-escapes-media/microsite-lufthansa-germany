@@ -6,7 +6,7 @@ layout: default
 
 <div class="bg--white">
   <div class="container container--xxl vpad--xxl text--center">
-    <p class="text--xl">{{page.intro}}</p>
+    {{page.intro}}
     {% if page.expert-intro %}
     <div class="space--lg"></div>
     <div class="boxpad--lg bg--grey-lightest">
@@ -38,7 +38,7 @@ layout: default
   <div class="vpad--xxl">
     <div class="container container--xxl">
       <h2 class="title title--xl text--600">{{section.title}}</h2>
-      <p class="text--xl">{{section.content}}</p>
+      {{section.content}}
       <div class="space--lg"></div>
     </div>
 
@@ -46,9 +46,9 @@ layout: default
       {% for poi in section.pois %}
       <div class="col">
         <div class="boxpad--lg">
-          <div class="bg-img bg-img--16-9" style="background-image: url({{site.img}}/img.jpg);"></div>
+          <div class="bg-img bg-img--16-9" style="background-image: url({{site.img}}/content/{{page.id}}/poi/{{poi.id}}.jpg);"></div>
           <div class="space--sm"></div>
-          <h4 class="title title--xs text--600">{{poi.title}}</h4>
+          <h4 class="title title--xxs text--500 text--upper">{{poi.title}}</h4>
           <p>{{poi.content}}</p>
         </div>
       </div>
@@ -61,7 +61,7 @@ layout: default
       <div class="bg--grey-lightest row row--no-gutters row--valign-center">
         <div class="col col--8">
           <div class="boxpad--lg">
-            <h4 class="title title--xs text--bold">A tip from our expert</h4>
+            <h4 class="title title--xs text--500">A tip from our expert</h4>
             {{section.expert-tip}}
           </div>
         </div>

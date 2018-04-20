@@ -10,7 +10,9 @@ banner:
   title: Germany
 
 intro: >
-  <p class="text--xl">Curabitur blandit tempus porttitor. Aenean lacinia bibendum nulla sed consectetur. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+  <p class="text--xl">Germany is a country where cosmopolitan port cities straddle glistening rivers, where centuries-old buildings are juxtaposed with the gleaming skyscrapers around them, it offers the perfect short break for the modern traveller.</p>
+  <p class="text--lg">Quietly beautiful, inspiring and diverse; to truly discover Germany is to scratch the surface of those picture-perfect cities and challenge your preconceptions. You might (and should) expect beautiful architecture and pretty market squares, but look further and find a burgeoning modern food scene, some of the finest beer in the world, serene parks and landscapes, thriving communities of creatives and a multitude of galleries and museums. </p>
+  <p class="text--lg">So, how well do you really know Germany? Get to know two of its most exciting cities - Frankfurt and Munich - with our insider guides. </p>
 
 page-links:
   - id: munich
@@ -39,7 +41,7 @@ page-links:
         </div>
         <div class="bob__text">
           <h3 class="title title--xl text--600">{{subpage.title}}</h3>
-          <p class="text--lg">{{subpage.intro|truncate:200}}</p>
+          <p class="text--lg">{{subpage.parent-intro}}</p>
           <div class="space--md"></div>
           <a class="btn btn--outline btn--outline-white">Find out more</a>
         </div>
@@ -54,10 +56,10 @@ page-links:
 
 <div class="bg--fixed vpad--xxxl" style="background-image: url({{site.img}}/content/banner-game.jpg);">
   <div class="container container--xxl text--white text--center">
-    <h2 class="title title--xl text--700">Play our game</h2>
-    <p class="text--xl">Play our game to find your perfect German holiday and some personal travel ideas...</p>
+    <h2 class="title title--xl text--700">Discover your perfect German holiday!</h2>
+    <p class="text--xl text--500">Play our game and find your ideal German city and some personalised tips to make the most of your holiday</p>
     <div class="space--sm"></div>
-    <a href="{{site.baseurl}}/trip-planner" class="btn btn--lg btn--solid">Discover now</a>
+    <a href="{{site.baseurl}}/trip-planner" class="btn btn--lg btn--solid">Play now</a>
   </div>
 </div>
 
