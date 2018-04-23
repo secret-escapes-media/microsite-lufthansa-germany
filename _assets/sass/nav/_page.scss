@@ -24,7 +24,6 @@ $nav-text-color:     $grey-darker;
   top: 0; left: 0;
   background-color: rgba($nav-color,.8);
   border-top: 1px solid $nav-border-color;
-  border-bottom: 1px solid $nav-border-color;
   text-align: center;
 
 
@@ -115,6 +114,8 @@ $nav-text-color:     $grey-darker;
     left: 0;
     right: 0;
     bottom: auto;
-    z-index: $z-nav  ;
+    z-index: $z-nav;
+    border-top: 0px;
+    border-bottom: 1px solid $nav-border-color;
   }
 }

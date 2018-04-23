@@ -1,0 +1,80 @@
+---
+layout: default
+---
+
+
+
+<div class="bg--grey-lightest">
+  <div class="container container--xxl vpad--xxl text--center">
+    {{page.intro}}
+    {% if page.expert-intro %}
+    <div class="space--lg"></div>
+    <div class="boxpad--lg bg--white">
+      {{page.expert-intro}}
+    </div>
+    {% endif %}
+  </div>
+  {% include nav/page.html %}
+</div>
+
+
+{% for section in page.sections %}
+<div class="bg--fixed" style="background-image: url({{site.img}}/content/{{page.id}}/bg-{% cycle '1','2' %}.png);">
+  <div class="wp" id="{{section.id}}"></div>
+
+  <div class="container vpad--xxxl">
+
+    <div class="row row--6-6 row--valign-center row--gutters-lg">
+      <div class="col">
+        <h2 class="title title--xl text--600">{{section.title}}</h2>
+        {{section.content}}
+        <div class="space--sm"></div>
+        <a href="#" class="btn btn--lufthansa">View flights</a>
+      </div>
+      <div class="col">
+
+        <div class="bg-img bg-img--16-9" style="background-image: url('{{site.img}}/img.jpg');"></div>
+        <div class="row row--constant-6-6 row--no-gutters">
+          <div class="col">
+            <div class="bg-img bg-img--16-9" style="background-image: url('{{site.img}}/img.jpg');"></div>
+          </div>
+          <div class="col">
+            <div class="bg-img bg-img--16-9" style="background-image: url('{{site.img}}/img.jpg');"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+{% endfor %}
+
+
+
+<div class="bg--grey-lightest vpad--xxl">
+  <div class="container">
+
+    <div class="text--center">
+      <h2 class="title title--xl text--600">Offers</h2>
+      <div class="space--xl"></div>
+    </div>
+
+    <div class="row row--xl-6-6 row--gutters-lg vpad--md">
+      {% assign offers = site.data.offers | where:'page',page.id | sort: 'saved' | reverse %}
+      {% for offer in offers %}
+        <div class="col">
+          {% include offer/offer.html %}
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="text--center">
+      <div class="space--md"></div>
+      <a href="{{site.baseurl}}/offers" class="btn btn--lg btn--solid">View all offers</a>
+    </div>
+
+  </div>
+
+</div>

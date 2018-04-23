@@ -38,9 +38,9 @@ $core-nav-padding-sm: 1rem;
 // ---------- NAV FOR CORE SE SITE ----------
 
 // the breakpoint for the core nav list to appear as the mobile nav
-$nav-list-bp: 870px;
+$nav-list-bp: 1000px;
 // the breakpoint for the logo to appear at the bottom of the mobile nav
-$logo-bp: 600px;
+$logo-bp: 1000px;
 
 .core-nav {
   height: 100%;
@@ -55,7 +55,7 @@ $logo-bp: 600px;
   }
 
   // spacing for double logos in core nav
-  .logo + .logo { margin-left: $s0; }
+  .logo + .logo { margin-left: $s5; }
 
   @include bp(md){
     padding-left: $core-nav-padding;
@@ -92,8 +92,9 @@ $logo-bp: 600px;
   }
   &__right {
     display: flex;
-    align-items: center;
+    // align-items: center;
     justify-content: flex-end;
+    height: 100%;
     width: 25%;
     min-width: $core-nav-height-sm;
     visibility: hidden;
@@ -147,7 +148,7 @@ $mobile-nav-width: 75%;
   @include transition;
 
   // spacing for logos in mobile core nav
-  .logo { margin: $s-2; }
+  .logo { margin: $s-2 $s2; }
 
   &.is-closed {
     left: -$mobile-nav-width;

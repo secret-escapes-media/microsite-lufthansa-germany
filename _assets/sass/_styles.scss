@@ -12,6 +12,7 @@
   &--lufthansa { background-color: $lufthansa; }
   // images
   &--fixed { background-attachment: fixed; background-size: cover; }
+  &--image { @include background-attributes;}
 }
 
 
@@ -38,6 +39,16 @@
     z-index: $z-content;
     background-color: $grey-dark;
     @include background-attributes;
+  }
+}
+
+
+.poi {
+  &__image { border-radius: 4px 4px 0 0; overflow: hidden; }
+  &__text { border-radius: 0 0 4px 4px; overflow: hidden; }
+
+  &-expert {
+    border-radius: 4px; overflow: hidden;
   }
 }
 

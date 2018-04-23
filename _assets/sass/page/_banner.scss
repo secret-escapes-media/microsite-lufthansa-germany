@@ -2,6 +2,7 @@
 
 .banner {
   position: relative;
+  overflow: hidden;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -36,16 +37,6 @@
     z-index: $z-content;
     background-color: $grey-dark;
     @include background-attributes;
-    // &:before {
-    //   // optional colour overlay on bg image
-    //   content: '';
-    //   position: absolute;
-    //   top: 0;
-    //   left: 0;
-    //   right: 0;
-    //   bottom: 0;
-    //   background-color: rgba($black,.15);
-    // }
   }
   &__nav {
     // optional container for navigation include
@@ -58,5 +49,29 @@
       top: 0;
       bottom: auto;
     }
+  }
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $z-content-upper;
+    background-color: rgba($b-navy,0.3);
+  }
+}
+
+// BANNER CAROUSEL
+.banner--carousel {
+  text-align: center;
+  min-height: 90%;
+  .banner {
+    &__wrap { pointer-events: none; }
+    &__slide {
+      @include background-attributes();
+      background-position: center;
+    }
+  }
+  .owl-item.active .banner__slide {
   }
 }

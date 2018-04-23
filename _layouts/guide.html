@@ -4,12 +4,12 @@ layout: default
 
 
 
-<div class="bg--white">
+<div class="bg--grey-lightest">
   <div class="container container--xxl vpad--xxl text--center">
     {{page.intro}}
     {% if page.expert-intro %}
     <div class="space--lg"></div>
-    <div class="boxpad--lg bg--grey-lightest">
+    <div class="boxpad--lg bg--white">
       {{page.expert-intro}}
     </div>
     {% endif %}
@@ -18,8 +18,8 @@ layout: default
 </div>
 
 
-
-<div class="bg--grey-lightest vpad--xxxl bg--fixed" style="background-image: url({{site.img}}/content/{{page.id}}/banner-map.jpg);">
+{% if page.map-url %}
+<div class="bg--grey-lightest vpad--xxxl bg--image" style="background-image: url({{site.img}}/content/{{page.id}}/banner-map.jpg);">
   <div class="wp" id="map"></div>
   <div class="container container--xxl text--center text--white">
     <span class="title title--xl text--700">Explore {{page.title}} from above</span>
@@ -28,26 +28,26 @@ layout: default
     <a href="javascript:void(0);" data-modal-item="{{page.id}}-map" data-map-url="{{page.map-url}}" class="js-open-modal btn btn--outline btn--outline-white btn--lg">Explore {{page.title}}</a>
   </div>
 </div>
-
+{% endif %}
 
 
 {% for section in page.sections %}
-<div class="container">
+<div class="bg--fixed" style="background-image: url({{site.img}}/content/{{page.id}}/bg-{% cycle '1','2' %}.png);">
   <div class="wp" id="{{section.id}}"></div>
 
-  <div class="vpad--xxl">
+  <div class="container vpad--xxxl">
     <div class="container container--xxl">
-      <h2 class="title title--xl text--600">{{section.title}}</h2>
-      {{section.content}}
-      <div class="space--lg"></div>
+      <h2 class="title title--xxl text--600">{{section.title}}</h2>
+      <div class="space--md"></div>
+      <div class="container--xl">{{section.content}}</div>
+      <div class="space--xxl"></div>
     </div>
 
     <div class="row row--4-4-4">
       {% for poi in section.pois %}
-      <div class="col">
-        <div class="boxpad--lg">
-          <div class="bg-img bg-img--16-9" style="background-image: url({{site.img}}/content/{{page.id}}/poi/{{poi.id}}.jpg);"></div>
-          <div class="space--sm"></div>
+      <div class="col poi">
+        <div class="poi__image bg-img bg-img--16-9" style="background-image: url({{site.img}}/content/{{page.id}}/poi/{{poi.id}}.jpg);"></div>
+        <div class="poi__text boxpad--lg bg--white">
           <h4 class="title title--xxs text--500 text--upper">{{poi.title}}</h4>
           <p>{{poi.content}}</p>
         </div>
@@ -58,7 +58,7 @@ layout: default
     {% if section.expert-tip %}
     <div class="container container--xxl">
       <div class="space--lg"></div>
-      <div class="bg--grey-lightest row row--no-gutters row--valign-center">
+      <div class="poi-expert bg--white row row--no-gutters row--valign-center">
         <div class="col col--8">
           <div class="boxpad--lg">
             <h4 class="title title--xs text--500">A tip from our expert</h4>
@@ -79,7 +79,7 @@ layout: default
 
 
 
-<div class="bg--grey-lightest vpad--xxl">
+<div class="bg--white vpad--xxl">
   <div class="container">
 
     <div class="text--center">
@@ -109,8 +109,9 @@ layout: default
 <div class="container--100 vpad--xxxl bg--grey-darkest bg--fixed" style="background-image: url('{{site.img}}/content/banner-flights.jpg');">
   <div class="container container--xxl text--center text--white">
     <h3 class="title title--xl text--600">Get to {{page.title}} with Lufthansa</h3>
+    <div class="space--sm"></div>
     <hr class="hr--center">
-    <p class="text--lg">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+    <p class="text--xl">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
     <div class="space--lg"></div>
     <a href="{{site.baseurl}}/flights" class="btn btn--lg btn--solid">View flights</a>
   </div>

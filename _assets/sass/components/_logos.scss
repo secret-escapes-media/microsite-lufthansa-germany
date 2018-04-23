@@ -19,4 +19,14 @@
     max-width: 180px;
     &-sm { max-width: 130px; }
   }
+  &--lufthansa {
+    display: flex;
+    align-items: center;
+    max-width: 160px;
+  }
+  &--germany-tourism {
+    display: flex;
+    align-items: flex-start;
+    max-width: 200px;
+  }
 }
