@@ -1,0 +1,98 @@
+.game {
+  &__wrap {
+    position: relative;
+  }
+  &__category-list,
+  &__style-list {
+    line-height: 0;
+  }
+  &__option {
+    display: inline-block;
+    position: relative;
+    z-index: $z-content;
+    width: 100%;
+    margin: 0;
+    padding: 0 !important;
+    cursor: pointer;
+    @include background-attributes;
+    background-size: 100%;
+    @include transition;
+    &:before {
+      display: block;
+      content: "";
+      width: 100%;
+      padding-top: 100%;
+    }
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: $z-content-upper;
+      background-color: rgba($grey-darkest,.66);
+      background-image: url(../img/icons/tick.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 0;
+      opacity: 0;
+      @include transition;
+    }
+    &:hover:after{
+      opacity: .5;
+      .has-limit & { opacity: 0; }
+    }
+    &.is-selected {
+      &:after {
+        opacity: 1;
+        background-size: 60px auto;
+        @include bp($lg) {
+          background-size: 80px auto;
+        }
+      }
+      .has-limit &:after {
+        opacity: 1;
+        background-color: rgba($grey-darkest,.9);
+      }
+    }
+    .game__category & { width: 50%; }
+    .game__style & { width: 50%; }
+    @include bp($lg) {
+      .game__category & { width: 25%; }
+      .game__style & { width: 25%; }
+    }
+  }
+
+}
+
+
+.game__message {
+  position: absolute;
+  top: 0;
+  left: 0; right: 0;
+  width: 100%;
+  padding: $s4;
+  background-color: rgba($grey-darkest,0.9);
+  color: $white;
+  z-index: 1;
+  span { display: block; }
+
+  &--fixed { position: fixed; }
+  &--end { position: absolute; top: auto; bottom: 0; }
+
+  .btn { display: none; margin-top: $s-1; }
+  .has-limit & .btn { display: inline-block; }
+  // disable row + row margin
+  & + * { margin-top: 0 !important; }
+}
+
+.game__wrap {
+  padding-top: 0;
+  margin-top: -$s4; // counters the top padding of the message
+  .game.game--complete & {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+}

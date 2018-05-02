@@ -1,6 +1,5 @@
 <div class="banner">
   <div class="site-header__offset"></div>
-  <div class="banner__bg" style="background-image: url('{{site.img}}/banner/{{page.id}}.jpg')"></div>
   <div class="banner__wrap">
     {% if page.banner.content %}
       {{page.banner.content | liquify}}
@@ -15,5 +14,8 @@
   <div class="site-nav__offset"></div>
   <div class="banner__nav">
     {% include nav/site.html %}
+  </div>
+  <div class="banner__bg" style="background-image: url('{{site.img}}/banner/{{page.id}}.jpg')">
+    <div class="banner__overlay"></div>
   </div>
 </div>

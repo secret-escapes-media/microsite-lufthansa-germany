@@ -33,23 +33,17 @@ features:
   - title: Economy
     id: economy
     content: >
-      <p><strong>To fly economy with Lufthansa is anything but basic.</strong> On short-haul flights, the slimline seats create maximum cabin space, which means maximum legroom for you. Included snacks and drinks keep you refreshed and payable Wi-Fi is available on some flights, keeping you connected from the skies. </p>
+      <p>To fly economy with Lufthansa is anything but basic. On short-haul flights, the slimline seats create maximum cabin space, which means maximum legroom for you. Included snacks and drinks keep you refreshed and payable Wi-Fi is available on some flights, keeping you connected from the skies. </p>
 
   - title: Business
     id: business
     content: >
-      <p><strong>Go business class for a truly luxurious all-round experience.</strong> Short-haul business class flights offer a generous two hold bags per person, access to an airport lounge, priority check-in and boarding, a full meal served on fine china, plus additional personal space with a guaranteed empty middle seat in a row of three. </p>
+      <p>Go business class for a truly luxurious all-round experience. Short-haul business class flights offer a generous two hold bags per person, access to an airport lounge, priority check-in and boarding, a full meal served on fine china, plus additional personal space with a guaranteed empty middle seat in a row of three. </p>
 
   - title: What’s onboard?
     id: whats-onboard
     content: >
       <p>Fly short-haul and you can Instagram that jaw-dropping view from the plane window or send that important email with payable Lufthansa FlyNet® Wi-Fi, available on selected flights.</p>
-
-  - title: Where we fly
-    id: where-we-fly
-    content: >
-      <p>With their outstanding reputation and applauded service, Lufthansa is our airline partner of choice for any journey to beautiful Germany. If you’ve seen all there is to see in Frankfurt and Munich, why not explore another of this fascinating country’s must-see cities? </p>
-      <p>Lufthansa also flies affordably to Berlin, Cologne, Dresden, Düsseldorf, Hamburg, Hannover, Leipzig, Nuremberg and Stuttgart. See below for fantastic flight offers to these enchanting and diverse destinations. </p>
 
 
 ---
@@ -78,12 +72,13 @@ features:
 </div>
 
 
-<div class="bg--grey-lightest">
+<div class="bg--grey-lightest harvey">
   <div class="wp" id="key-routes"></div>
-  <div class="container container--xxl vpad--xxl text--center">
+  <div class="harvey__text text--center">
     <h2 class="title title--xl text--700">Key Routes</h2>
     {{page.key-routes}}
   </div>
+  <div class="harvey__img" style="background-image: url('{{site.img}}/content/{{page.id}}/routes.jpg');"></div>
 </div>
 
 
@@ -95,12 +90,12 @@ features:
       <div class="space--xl"></div>
     </div>
 
-    <div class="row row--6-6 row--gutters-lg">
+    <div class="row row--4-4-4 row--gutters-lg">
       {% for feature in page.features %}
       <div class="col">
-        <div class="bg-img bg-img--21-9" style="background-image: url({{site.img}}/content/{{page.id}}/{{feature.id}}.jpg);"></div>
+        <div class="bg-img bg-img--4-3" style="background-image: url({{site.img}}/content/{{page.id}}/{{feature.id}}.jpg);"></div>
         <div class="space--md"></div>
-        <h2 class="title title--sm text--400">{{feature.title}}</h2>
+        <h2 class="title title--xs text--600">{{feature.title}}</h2>
         {{feature.content}}
       </div>
       {% endfor %}

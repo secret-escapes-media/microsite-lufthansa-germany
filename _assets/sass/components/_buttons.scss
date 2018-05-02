@@ -22,6 +22,9 @@
   &--solid { background-color: $b-red;
     &:hover { background-color: darken($b-red,5); }
   }
+  &--red { background-color: $b-red;
+    &:hover { background-color: darken($b-red,5); }
+  }
   &--lufthansa { background-color: $lufthansa;
     &:hover { background-color: darken($lufthansa,10); }
   }

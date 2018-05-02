@@ -121,6 +121,7 @@ gulp.task('build-main-js', function(cb) {
     './_assets/js/_components/modal.js',
     './_assets/js/_components/sticky-nav.js',
     './_assets/js/_components/banner-carousel.js',
+    './_assets/js/_components/game.js',
 
     // custom js for project
     './_assets/js/main.js',
