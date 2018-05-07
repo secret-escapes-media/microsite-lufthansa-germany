@@ -120,7 +120,7 @@ gulp.task('build-main-js', function(cb) {
     './_assets/js/_components/offer-countdown.js',
     './_assets/js/_components/modal.js',
     './_assets/js/_components/sticky-nav.js',
-    './_assets/js/_components/banner-carousel.js',
+    './_assets/js/_components/banner.js',
     './_assets/js/_components/game.js',
 
     // custom js for project

@@ -44,3 +44,17 @@ $("#owl-carousel-prev").click(function(){
 $("#owl-carousel-next").click(function(){
   homeCarousel.trigger('next.owl.carousel')
 });
+
+
+// ========================================
+//  BANNER MAP
+// ========================================
+
+$('.banner__map-frame').mouseover(function(){
+  $('.banner--map').addClass('map--active');
+});
+$('.banner__map-frame').mouseout(function(){
+  $('.banner--map').removeClass('map--active');
+});
+
+

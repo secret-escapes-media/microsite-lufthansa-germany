@@ -1,0 +1,46 @@
+<div class="banner banner--carousel banner--map">
+  <div class="site-header__offset"></div>
+
+  <div class="banner__wrap">
+    {% if page.banner.content %}
+      {{page.banner.content | liquify}}
+    {% else %}
+      <div class="container">
+        {% if page.banner.title-sup %}<h2 class="title title--md text--wide-kern text--upper text--300">{{page.banner.title-sup}}</h2>{% endif %}
+        <h1 class="title title--banner text--upper text--700 text--kern">{% if page.banner.title %}{{page.banner.title}}{% else %}{{page.title}}{% endif %}</h1>
+        {% if page.banner.title-sub %}<h2 class="title title--md">{{page.banner.title-sub}}</h2>{% endif %}
+      </div>
+    {% endif %}
+  </div>
+
+  <div class="site-nav__offset"></div>
+  <div class="banner__nav">
+    {% include nav/site.html %}
+  </div>
+
+  <div class="banner__map">
+    <div class="banner__map-wrap container">
+      <div class="banner__map-frame">
+        {% for icon in page.map %}
+        <a href="{{site.baseurl}}/{{icon.link}}" class="banner__map-icon" style="{{icon.position}}">
+          <span class="banner__map-icon__icon"></span>
+          <span class="banner__map-icon__label">{{icon.title}}</span>
+        </a>
+        {% endfor %}
+        <div class="banner__map-frame__bg"></div>
+      </div>
+    </div>
+    <div class="banner__map-overlay"></div>
+  </div>
+
+  <div class="banner__bg">
+    <div class="banner__overlay"></div>
+    <div class="carousel owl-carousel" id="banner-carousel">
+      <div class="banner__slide" style="background-image: url('{{site.img}}/banner/{{page.id}}/01.jpg');"></div>
+      <div class="banner__slide" style="background-image: url('{{site.img}}/banner/{{page.id}}/02.jpg');"></div>
+      <div class="banner__slide" style="background-image: url('{{site.img}}/banner/{{page.id}}/03.jpg');"></div>
+      <div class="banner__slide" style="background-image: url('{{site.img}}/banner/{{page.id}}/04.jpg');"></div>
+    </div>
+  </div>
+
+</div>
