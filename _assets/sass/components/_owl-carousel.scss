@@ -28,46 +28,49 @@
     bottom: 0;
     z-index: $z-content-upper+1;
   }
-  &-navitem {
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    width: 20%;
-    height: 100%;
-    text-indent: -9999em;
-    line-height: 0;
-    opacity: 0;
-    @include transition;
-    &:hover { opacity: 1; }
-    &:after {
-      content: "";
+
+  @include bp($lg){
+    &-navitem {
+      cursor: pointer;
       position: absolute;
-      display: block;
-      width: ($s1*8);
+      top: 0;
+      width: 20%;
       height: 100%;
-      @include background-attributes;
-      background-size: 2.5em;
-    }
-    &-next {
-      right: 0;
-      background: -moz-linear-gradient(right, rgba($grey-darkest,0.65) 0%, rgba($grey-darkest,0) 100%);
-      background: -webkit-linear-gradient(right, rgba($grey-darkest,0.65) 0%,rgba($grey-darkest,0) 100%);
-      background: linear-gradient(to left, rgba($grey-darkest,0.65) 0%,rgba($grey-darkest,0) 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001b1d22', endColorstr='#a61b1d22',GradientType=1 );
+      text-indent: -9999em;
+      line-height: 0;
+      opacity: 0;
+      @include transition;
+      &:hover { opacity: 1; }
       &:after {
-        right: 0;
-        background-image: url('../img/icons/arrow-right.svg');
+        content: "";
+        position: absolute;
+        display: block;
+        width: ($s1*8);
+        height: 100%;
+        @include background-attributes;
+        background-size: 2.5em;
       }
-    }
-    &-prev {
-      left: 0;
-      background: -moz-linear-gradient(left, rgba($grey-darkest,0.65) 0%, rgba($grey-darkest,0) 100%);
-      background: -webkit-linear-gradient(left, rgba($grey-darkest,0.65) 0%,rgba($grey-darkest,0) 100%);
-      background: linear-gradient(to right, rgba($grey-darkest,0.65) 0%,rgba($grey-darkest,0) 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a61b1d22', endColorstr='#001b1d22',GradientType=1 );
-      &:after {
+      &-next {
+        right: 0;
+        background: -moz-linear-gradient(right, rgba($grey-darkest,0.65) 0%, rgba($grey-darkest,0) 100%);
+        background: -webkit-linear-gradient(right, rgba($grey-darkest,0.65) 0%,rgba($grey-darkest,0) 100%);
+        background: linear-gradient(to left, rgba($grey-darkest,0.65) 0%,rgba($grey-darkest,0) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001b1d22', endColorstr='#a61b1d22',GradientType=1 );
+        &:after {
+          right: 0;
+          background-image: url('../img/icons/arrow-right.svg');
+        }
+      }
+      &-prev {
         left: 0;
-        background-image: url('../img/icons/arrow-left.svg');
+        background: -moz-linear-gradient(left, rgba($grey-darkest,0.65) 0%, rgba($grey-darkest,0) 100%);
+        background: -webkit-linear-gradient(left, rgba($grey-darkest,0.65) 0%,rgba($grey-darkest,0) 100%);
+        background: linear-gradient(to right, rgba($grey-darkest,0.65) 0%,rgba($grey-darkest,0) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a61b1d22', endColorstr='#001b1d22',GradientType=1 );
+        &:after {
+          left: 0;
+          background-image: url('../img/icons/arrow-left.svg');
+        }
       }
     }
   }

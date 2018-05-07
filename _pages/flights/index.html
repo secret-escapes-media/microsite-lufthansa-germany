@@ -17,8 +17,10 @@ intro: >
 page-nav:
   - id: key-routes
     title: Key Routes
-  - id: features
+  - id: experience
     title: The Experience
+  - id: family
+    title: Family Services
 
 
 
@@ -28,22 +30,45 @@ key-routes: >
 
 
 
-features:
+sections:
 
-  - title: Economy
-    id: economy
-    content: >
-      <p>To fly economy with Lufthansa is anything but basic. On short-haul flights, the slimline seats create maximum cabin space, which means maximum legroom for you. Included snacks and drinks keep you refreshed and payable Wi-Fi is available on some flights, keeping you connected from the skies. </p>
+  - title: The Lufthansa Experience
+    id: experience
+    features:
+      - title: Economy
+        id: economy
+        content: >
+          <p>To fly economy with Lufthansa is anything but basic. On short-haul flights, the slimline seats create maximum cabin space, which means maximum legroom for you. Included snacks and drinks keep you refreshed and payable Wi-Fi is available on some flights, keeping you connected from the skies. </p>
 
-  - title: Business
-    id: business
-    content: >
-      <p>Go business class for a truly luxurious all-round experience. Short-haul business class flights offer a generous two hold bags per person, access to an airport lounge, priority check-in and boarding, a full meal served on fine china, plus additional personal space with a guaranteed empty middle seat in a row of three. </p>
+      - title: Business
+        id: business
+        content: >
+          <p>Go business class for a truly luxurious all-round experience. Short-haul business class flights offer a generous two hold bags per person, access to an airport lounge, priority check-in and boarding, a full meal served on fine china, plus additional personal space with a guaranteed empty middle seat in a row of three. </p>
 
-  - title: What’s onboard?
-    id: whats-onboard
-    content: >
-      <p>Fly short-haul and you can Instagram that jaw-dropping view from the plane window or send that important email with payable Lufthansa FlyNet® Wi-Fi, available on selected flights.</p>
+      - title: What’s onboard?
+        id: whats-onboard
+        content: >
+          <p>Fly short-haul and you can Instagram that jaw-dropping view from the plane window or send that important email with payable Lufthansa FlyNet® Wi-Fi, available on selected flights.</p>
+
+
+
+  - title: Family Services
+    id: family
+    features:
+      - title: Lean back, relax – and enjoy planning
+        id: relax
+        content: >
+          <p>Flying with little ones can be a challenge – which we would like to help you with. Rely on our tips and checklists and start your family adventure stress-free.</p>
+
+      - title: Picnic above the clouds
+        id: food
+        content: >
+          <p>Traveling makes people hungry – particularly children! Take advantage not only of the offer on board, which at Lufthansa comprises tasty and varied children’s menus (please preorder!), but also think about taking some favorite snacks for easy access in between mealtimes</p>
+
+      - title: Fun and games
+        id: games
+        content: >
+          <p>Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
 
 
 ---
@@ -72,36 +97,45 @@ features:
 </div>
 
 
+
+
 <div class="bg--grey-lightest harvey">
   <div class="wp" id="key-routes"></div>
   <div class="harvey__text text--center">
-    <h2 class="title title--xl text--700">Key Routes</h2>
+    <h2 class="title title--lg text--700">Key Routes</h2>
     {{page.key-routes}}
   </div>
   <div class="harvey__img" style="background-image: url('{{site.img}}/content/{{page.id}}/routes.jpg');"></div>
 </div>
 
 
-<div class="bg--white">
-  <div class="wp" id="features"></div>
-  <div class="container vpad--xxl">
+
+
+<div class="bg--white vpad--xl">
+  {% for section in page.sections %}
+  <div class="wp" id="{{section.id}}"></div>
+  {% unless forloop.first %}<hr class="hr--center">{% endunless %}
+  <div class="container vpad--lg">
     <div class="text--center">
-      <h2 class="title title--xl text--700">The Lufthansa Experience</h2>
+      <h2 class="title title--lg text--700">{{section.title}}</h2>
       <div class="space--xl"></div>
     </div>
 
     <div class="row row--4-4-4 row--gutters-lg">
-      {% for feature in page.features %}
+      {% for feature in section.features %}
       <div class="col">
-        <div class="bg-img bg-img--4-3" style="background-image: url({{site.img}}/content/{{page.id}}/{{feature.id}}.jpg);"></div>
+        <div class="bg-img bg-img--16-9" style="background-image: url({{site.img}}/content/{{page.id}}/{{feature.id}}.jpg);"></div>
         <div class="space--md"></div>
-        <h2 class="title title--xs text--600">{{feature.title}}</h2>
+        <h2 class="title title--xs text--500">{{feature.title}}</h2>
         {{feature.content}}
       </div>
       {% endfor %}
     </div>
   </div>
+  {% endfor %}
 </div>
+
+
 
 
 <div class="bg--lufthansa text--white">

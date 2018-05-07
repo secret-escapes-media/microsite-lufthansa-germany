@@ -41,7 +41,7 @@ sections:
 
   - title: Berlin
     id: berlin
-    link:
+    link: http://www.germany.travel/en/towns-cities-culture/towns-cities/berlin.html
     content: >
       <p class="text--lg">One of Europe’s finest cities, Berlin makes for a remarkably unique city break. From quirky brunch spots to bohemian bars, discover both east and west with a fascinating history that laid the foundation for one artsy, hip and irresistable city.</p>
 
@@ -49,7 +49,7 @@ sections:
 
   - title: Cologne
     id: cologne
-    link:
+    link: http://www.germany.travel/en/towns-cities-culture/towns-cities/cologne.html
     content: >
       <p class="text--lg">Gothic spires reach far into the sky in this historical, yet thoroughly contemporary, west German powerhouse. Let your jaw drop at the gothic masterpiece of Cologne Cathedral, before heading to a waterside Rhine bar for a classic Kölsch and a day exploring great museums and galleries.</p>
 
@@ -57,7 +57,7 @@ sections:
 
   - title: Dresden
     id: dresden
-    link:
+    link: http://www.germany.travel/en/towns-cities-culture/towns-cities/dresden.html
     content: >
       <p class="text--lg">A remarkable city, Dresden was all but flattened during the Second World War. It’s magnificent Renaissance marvels that once earned the moniker ‘Florence of the North’ were completely rebuilt, the precious contents returned – explore the museums and galleries in this decadent city.</p>
 
@@ -65,7 +65,7 @@ sections:
 
   - title: Düsseldorf
     id: dusseldorf
-    link:
+    link: http://www.germany.travel/en/towns-cities-culture/towns-cities/duesseldorf.html
     content: >
       <p class="text--lg">Glistening post-modern buildings and a sleek, smart set of locals affirm Düsseldorf’s business credentials – with luxury shopping and dining to complement. Yet along the Rhine, the chocolate-box old town still remains the favourite spot to unwind with a classic Altbier.</p>
 
@@ -73,7 +73,7 @@ sections:
 
   - title: Hamburg
     id: hamburg
-    link:
+    link: http://www.germany.travel/en/towns-cities-culture/towns-cities/hamburg.html
     content: >
       <p class="text--lg">A wonderfully liberal harbour town, Hamburg is a northern bastion of progressive cool in a landscape of harbour cranes and waterside modernism. Vibrant neighbourhoods and a multicultural foodie scene, plus an acclaimed music scene, makes Hamburg a destination for those in-the-know.</p>
 
@@ -81,7 +81,7 @@ sections:
 
   - title: Hannover
     id: hannover
-    link:
+    link: http://www.germany.travel/en/towns-cities-culture/towns-cities/hannover.html
     content: >
       <p class="text--lg">Walk the cobbled streets of the chocolate box old town, delight at the neo-classical marvel of the Opera House, or walk the serene Herrenhausen Gardens. Hanover is a little-known gem; flea markets on the river, the hip Linden neighbourhood, and pilsners at the water’s edge. </p>
 
@@ -89,7 +89,7 @@ sections:
 
   - title: Leipzig
     id: leipzig
-    link:
+    link: http://www.germany.travel/en/towns-cities-culture/towns-cities/leipzig.html
     content: >
       <p class="text--lg">Saxony’s most hip city is a centre of creative cool, full of big ideas and laid-back locals. Music and art are the language of the city, with a certain bohemian flair making Leipzig a true rival to Berlin. Museums, galleries and plenty of music and comedy make Leipzig a refreshing city break. </p>
 
@@ -97,7 +97,7 @@ sections:
 
   - title: Nuremberg
     id: nuremberg
-    link:
+    link: http://www.germany.travel/en/towns-cities-culture/towns-cities/nuremberg.html
     content: >
       <p class="text--lg">The second-largest Bavarian city is a medieval wonder, where the castle towers loom over a gorgeous old town. With foodie treats (try the ‘Drei im Weggla’!) and dark, dark beers adding to the Bavarian delights, Nuremberg makes for a spectacular break of authentic Bavarian charms. </p>
 
@@ -105,7 +105,7 @@ sections:
 
   - title: Stuttgart
     id: stuttgart
-    link:
+    link: http://www.germany.travel/en/towns-cities-culture/towns-cities/stuttgart.html
     content: >
       <p class="text--lg">Home of the world’s finest cars – Porsche and Mercedes Benz – Stuttgart is a hub for refined, artisanal experiences. Fine restaurants grace streets of Baroque marvels, including the ballet, state museum and more. Don’t miss the vineyards that dot the hills around the city.</p>
 
@@ -132,28 +132,28 @@ sections:
 
 
 {% for section in page.sections %}
-<div class="bg--fixed" style="background-image: url({{site.img}}/content/{{page.id}}/bg-{% cycle '1','2' %}.png);">
+<div class="{% cycle '',' bg--grey-lightest'%}">
   <div class="wp" id="{{section.id}}"></div>
 
   <div class="container vpad--xxxl">
 
-    <div class="row row--6-6 row--valign-center row--gutters-lg">
+    <div class="row row--valign-center row--gutters-lg bob{% cycle '',' bob--swap'%}">
 
-      <div class="col">
+      <div class="bob__text">
         <h2 class="title title--xl text--600">{{section.title}}</h2>
         {{section.content}}
         <div class="space--sm"></div>
-        <a href="{{section.link}}" class="btn btn--lufthansa">View flights</a>
+        <a href="{{section.link}}" class="btn btn--solid">Find out more</a>
       </div>
 
-      <div class="col">
-        <div class="bg-img bg-img--16-9" style="background-image: url('{{site.img}}/content/{{page.id}}/{{section.id}}/1.jpg');"></div>
+      <div class="bob__img">
+        <a href="{{section.link}}" class="bg-img bg-img--21-9" style="background-image: url('{{site.img}}/content/{{page.id}}/{{section.id}}/1.jpg');"></a>
         <div class="row row--constant-6-6 row--no-gutters">
           <div class="col">
-            <div class="bg-img bg-img--16-9" style="background-image: url('{{site.img}}/content/{{page.id}}/{{section.id}}/2.jpg');"></div>
+            <a href="{{section.link}}" class="bg-img bg-img--16-9" style="background-image: url('{{site.img}}/content/{{page.id}}/{{section.id}}/2.jpg');"></a>
           </div>
           <div class="col">
-            <div class="bg-img bg-img--16-9" style="background-image: url('{{site.img}}/content/{{page.id}}/{{section.id}}/3.jpg');"></div>
+            <a href="{{section.link}}" class="bg-img bg-img--16-9" style="background-image: url('{{site.img}}/content/{{page.id}}/{{section.id}}/3.jpg');"></a>
           </div>
         </div>
       </div>

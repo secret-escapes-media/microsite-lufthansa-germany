@@ -44,6 +44,8 @@
 
 
 .poi {
+  border-radius: 4px;
+  box-shadow: 0 5px 50px rgba($grey-darkest,0.1);
   &__image { border-radius: 4px 4px 0 0; overflow: hidden; }
   &__text { border-radius: 0 0 4px 4px; overflow: hidden; }
 
@@ -52,3 +54,24 @@
   }
 }
 
+
+.expert {
+  background-color: $white;
+  padding: $s4;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0 5px 50px rgba($grey-darkest,0.1);
+  @include bp($lg) {
+    text-align: left;
+  }
+  &__image {
+    display: inline-block;
+    width: 80%;
+    max-width: 160px;
+    margin-top: -$s6;
+    margin-bottom: $s3;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 2px 15px rgba($grey-darkest,0.2);
+  }
+}

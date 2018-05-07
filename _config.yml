@@ -3,7 +3,7 @@ title: Undiscovered Germany
 clients:
   - name: Lufthansa
     image: lufthansa.svg
-    link: "#client-name"
+    link: "https://www.lufthansa.com/uk/en/Homepage"
   - name: Germany Tourism
     image: germany.png
     link: "#client-name"

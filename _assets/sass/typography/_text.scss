@@ -13,15 +13,21 @@
   &--wide-kern    { letter-spacing: .15em; }
   &--wide-kern-lg { letter-spacing: .3em; }
   &--upper        { text-transform: uppercase; }
+  &--bold         { font-weight: 500; }
+  &--bolder       { font-weight: 700; }
   &--200          { font-weight: 200; }
   &--300          { font-weight: 300; }
   &--400          { font-weight: 400; }
   &--500          { font-weight: 500; }
-  &--600          { font-weight: 600; }
+  &--600          { font-weight: 700; }
   &--700          { font-weight: 700; }
 
   // colours
-  &--white { color: $white; }
+  &--white {
+    color: $white;
+    &.title,
+    & .title { color: $white; }
+  }
   &--black { color: $grey-dark; }
 
   // alignment

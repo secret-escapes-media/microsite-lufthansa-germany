@@ -4,35 +4,70 @@ layout: default
 
 
 
+
+
+
 <div class="bg--grey-lightest">
-  <div class="container container--xxl vpad--xxl text--center">
-    {{page.intro}}
-    {% if page.expert-intro %}
-    <div class="space--lg"></div>
-    <div class="boxpad--lg bg--white">
-      {{page.expert-intro}}
+
+  <div class="vpad--xxl">
+    <div class="container container--xxl text--center">
+      {{page.intro}}
+    </div>
+
+    {% if page.expert %}
+    <div class="container container--xxxl">
+
+      <div class="text--center">
+        <hr class="hr--center">
+        <h3 class="title title--lg text--bold vpad--md">A local's perspective</h3>
+      </div>
+
+      <div class="expert">
+        <div class="row">
+          <div class="col col--4">
+            <div class="expert__image bg-img bg-img--1-1" style="background-image: url({{site.img}}/content/{{page.id}}/expert.jpg);"></div>
+            <div class="expert__intro">
+              <span class="title title--xs text--upper text--bolder">{{page.expert.name}}</span>
+              <p class="text--lg">{{page.expert.intro}}</p>
+            </div>
+          </div>
+          <div class="col col--8">
+            {{page.expert.content}}
+          </div>
+        </div>
+      </div>
+
     </div>
     {% endif %}
   </div>
+
   {% include nav/page.html %}
 </div>
+
+
+
+
 
 
 {% if page.map-url %}
 <div class="bg--grey-lightest vpad--xxxl bg--image" style="background-image: url({{site.img}}/content/{{page.id}}/banner-map.jpg);">
   <div class="wp" id="map"></div>
   <div class="container container--xxl text--center text--white">
-    <span class="title title--xl text--700">Explore {{page.title}} from above</span>
-    <p class="text--xxl">{{page.map-intro}}</p>
+    <span class="title title--xl text--700">Explore {{page.title}}</span>
+    {% if page.map-intro %}<p class="text--xxl">{{page.map-intro}}</p>{% endif %}
     <div class="space--lg"></div>
-    <a href="javascript:void(0);" data-modal-item="{{page.id}}-map" data-map-url="{{page.map-url}}" class="js-open-modal btn btn--outline btn--outline-white btn--lg">Explore {{page.title}}</a>
+    <a href="javascript:void(0);" data-modal-item="{{page.id}}-map" data-map-url="{{page.map-url}}" class="js-open-modal btn btn--outline btn--outline-white btn--lg">{{page.map-cta}}</a>
   </div>
 </div>
 {% endif %}
 
 
+
+
+
+
 {% for section in page.sections %}
-<div class="bg--fixed" style="background-image: url({{site.img}}/content/{{page.id}}/bg-{% cycle '1','2' %}.png);">
+<div class="bg--fixed" style="background-image: url({{site.img}}/content/{{page.id}}/bg-{{section.id}}.jpg);">
   <div class="wp" id="{{section.id}}"></div>
 
   <div class="container vpad--xxxl">
@@ -44,33 +79,21 @@ layout: default
     </div>
 
     <div class="row row--4-4-4">
-      {% for poi in section.pois %}
-      <div class="col poi">
-        <div class="poi__image bg-img bg-img--16-9" style="background-image: url({{site.img}}/content/{{page.id}}/poi/{{poi.id}}.jpg);"></div>
-        <div class="poi__text boxpad--lg bg--white">
-          <h4 class="title title--xxs text--500 text--upper">{{poi.title}}</h4>
-          <p>{{poi.content}}</p>
-        </div>
-      </div>
+      {% for highlightId in section.highlights %}
+        {% assign highlight = site.data.highlights | where: 'id',highlightId.id %}
+        {% for highlight in highlight %}
+          <div class="col">
+            <div class="poi">
+              <div class="poi__image bg-img bg-img--16-9" style="background-image: url({{site.img}}/content/{{page.id}}/poi/{{highlight.id}}.jpg);"></div>
+              <div class="poi__text boxpad--lg bg--white">
+                <h4 class="title title--xxs text--500 text--upper">{{highlight.title}}</h4>
+                <p>{{highlight.content}}</p>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
       {% endfor %}
     </div>
-
-    {% if section.expert-tip %}
-    <div class="container container--xxl">
-      <div class="space--lg"></div>
-      <div class="poi-expert bg--white row row--no-gutters row--valign-center">
-        <div class="col col--8">
-          <div class="boxpad--lg">
-            <h4 class="title title--xs text--500">A tip from our expert</h4>
-            {{section.expert-tip}}
-          </div>
-        </div>
-        <div class="col col--4">
-          <div class="bg-img bg-img--4-3" style="background-image: url({{site.img}}/img.jpg);"></div>
-        </div>
-      </div>
-    </div>
-    {% endif %}
 
   </div>
 
@@ -79,11 +102,14 @@ layout: default
 
 
 
+
+
+
 <div class="bg--white vpad--xxl">
   <div class="container">
 
     <div class="text--center">
-      <h2 class="title title--xl text--600">{{page.title}} offers</h2>
+      <h2 class="title title--xxl text--600">Travel offers</h2>
       <div class="space--xl"></div>
     </div>
 
@@ -106,14 +132,18 @@ layout: default
 </div>
 
 
-<div class="container--100 vpad--xxxl bg--grey-darkest bg--fixed" style="background-image: url('{{site.img}}/content/banner-flights.jpg');">
+
+
+
+
+<div class="container--100 vpad--xxxl bg--grey-darkest bg--image" style="background-image: url('{{site.img}}/content/banner-flights.jpg');">
   <div class="container container--xxl text--center text--white">
     <h3 class="title title--xl text--600">Get to {{page.title}} with Lufthansa</h3>
     <div class="space--sm"></div>
     <hr class="hr--center">
     <p class="text--xl">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
     <div class="space--lg"></div>
-    <a href="{{site.baseurl}}/flights" class="btn btn--lg btn--solid">View flights</a>
+    <a href="{{site.baseurl}}/flights" class="btn btn--lg btn--white">View flights</a>
   </div>
 </div>
 
