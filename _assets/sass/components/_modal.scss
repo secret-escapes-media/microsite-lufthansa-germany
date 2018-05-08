@@ -150,7 +150,13 @@ $modaltransition-distance: 4em;
       content: "";
       display: block;
       width: 100%;
-      padding-top: 56.25%;
+      padding-top: 133.333333333334%;
+    }
+    @include bp($lg){
+      &:before { padding-top: 75%; }
+    }
+    @include bp($xxl){
+      &:before { padding-top: 56.25%; }
     }
     & iframe {
       position: absolute;
