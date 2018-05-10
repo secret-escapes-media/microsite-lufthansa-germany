@@ -10,15 +10,13 @@ link: "https://www.lufthansa.com/uk/en/Homepage"
 
 parent-intro: Start your city adventure on a high and fly directly to Munich or Frankfurt from the UK with Germany’s biggest airline - Lufthansa. You’ll arrive comfortably and in style, allowing you to wind-down the moment you board the plane, especially with handy features such as in-flight Wi-Fi to keep you entertained.
 intro: >
-  <p class="text--lg">Acquaint yourself with Undiscovered Germany and fly there in style on Germany’s biggest and most awarded airline; Lufthansa. </p>
+  <p class="text--xl">Acquaint yourself with Undiscovered Germany and fly there in style on Germany’s biggest and most awarded airline; Lufthansa. </p>
   <p class="text--lg">Proudly taking a place as one of the 10 best premier airlines in the world, Lufthansa has just been independently rated as Europe’s first and only five-star airline. </p>
   <p class="text--lg">With outstanding staff making you feel comfortable and welcome on board, plus an exemplary experience both in the air and on the ground, Lufthansa is the natural choice for any discerning traveller who won’t compromise on superb quality and service.</p>
 
 
 
 page-nav:
-  - id: key-routes
-    title: Key Routes
   - id: experience
     title: The Experience
   - id: family
@@ -34,7 +32,7 @@ key-routes: >
 
 sections:
 
-  - title: The Lufthansa Experience
+  - title: The Lufthansa experience
     id: experience
     features:
       - title: Economy
@@ -57,26 +55,26 @@ sections:
 
 
 
-  - title: Family Services
+  - title: Flying with family
     id: family
     features:
       - title: Lean back, relax – and enjoy planning
         id: relax
         link: https://www.lufthansa.com/uk/en/Travelling-with-children
         content: >
-          <p>Flying with little ones can be a challenge – which we would like to help you with. Rely on our tips and checklists and start your family adventure stress-free.</p>
+          <p>Flying with little ones can be a challenge – which Lufthansa are there to help you with. Rely on their tips and checklists and start your family adventure stress-free.</p>
 
-      - title: Picnic above the clouds
+      - title: Family Check-in
+        id: check-in
+        link: https://www.lufthansa.com/uk/en/Check-In-With-The-Family
+        content: >
+          <p>Discover the ease of Family Check-in at Frankfurt and Munich airports. Play areas and changing facilities make boarding your flight easy and convenient.</p>
+
+      - title: Little Food Testers
         id: food
         link: https://www.lufthansa.com/uk/en/Childrens-menus-on-board
         content: >
-          <p>Traveling makes people hungry – particularly children! Take advantage not only of the offer on board, which at Lufthansa comprises tasty and varied children’s menus (please preorder!), but also think about taking some favorite snacks for easy access in between mealtimes</p>
-
-      - title: Fun and games
-        id: games
-        link: https://www.lufthansa.com/uk/en/Entertainment-on-board
-        content: >
-          <p>Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+          <p>With your child’s experience at the forefront of Lufthansa’s family service, the airline is please to offer a children’s menu tested and finished by a panel of children! No more fussy meals on-board Lufthansa...</p>
 
 
 ---
@@ -84,24 +82,12 @@ sections:
 
 
 <div class="bg--white">
-  <div class="container vpad--xxl">
-    <div class="row row--gutters row--valign-center">
+  <div class="container container--xxl vpad--xxl text--center">
 
-      <div class="col col--6">
-        <p class="text--lg">{{page.intro}}</p>
-        <div class="space--sm"></div>
-        <a href="{{page.link}}" class="btn btn--lufthansa">View Lufthansa flights</a>
-      </div>
+    {{page.intro}}
+    <div class="space--sm"></div>
+    <a href="{{page.link}}" class="btn btn--lufthansa">View Lufthansa flights</a>
 
-      <div class="col col--6">
-        <div class="bg-img bg-img--16-9" style="background-image: url({{site.img}}/content/{{page.id}}/video.jpg);">
-          <div class="bg-img__content">
-            <div class="bg-img__play"></div>
-          </div>
-        </div>
-      </div>
-
-    </div>
   </div>
   {% include nav/page.html %}
 </div>
@@ -110,7 +96,6 @@ sections:
 
 
 <div class="bg--grey-lightest harvey">
-  <div class="wp" id="key-routes"></div>
   <div class="harvey__text text--center">
     <h2 class="title title--md text--600">Key Routes</h2>
     {{page.key-routes}}
@@ -124,7 +109,7 @@ sections:
 <div class="bg--white vpad--xl">
   {% for section in page.sections %}
   <div class="wp" id="{{section.id}}"></div>
-  {% unless forloop.first %}<hr class="hr--center">{% endunless %}
+  {% unless forloop.first %}<div class="space--lg">{% endunless %}
   <div class="container vpad--lg">
     <div class="text--center">
       <h2 class="title title--lg text--700">{{section.title}}</h2>
