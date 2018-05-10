@@ -52,9 +52,12 @@ $("#owl-carousel-next").click(function(){
 
 $('.banner__map-frame').mouseover(function(){
   $('.banner--map').addClass('map--active');
-});
-$('.banner__map-frame').mouseout(function(){
+}).mouseout(function(){
   $('.banner--map').removeClass('map--active');
+});
+
+$('.banner__map-btn').click(function(){
+  $('.banner--map').addClass('map--active');
 });
 
 

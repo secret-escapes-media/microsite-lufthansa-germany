@@ -7,8 +7,8 @@
   color: $grey-darker;
   @include font-smoothing;
 
-  &--banner { font-size: $s8; line-height: 1.033; }
-  &--xxxxl  { font-size: $s8; line-height: 1.033; }
+  &--banner { font-size: $s7; line-height: 1.033; }
+  &--xxxxl  { font-size: $s7; line-height: 1.033; }
   &--xxxl   { font-size: $s7; line-height: 1.033; }
   &--xxl    { font-size: $s7; line-height: 1.075; }
   &--xl     { font-size: $s6; line-height: 1.15; }
@@ -19,10 +19,10 @@
   &--xxs    { font-size: $s1; line-height: 1.4; }
   &--xxxs   { font-size: $s0; line-height: 1.45; }
 
-  @include bp($md){
+  @include bp($lg){
     &--banner { font-size: $s9; line-height: 1.033; }
   }
-  @include bp($lg){
+  @include bp($xl){
     &--banner { font-size: $s11; }
     &--xxxxl  { font-size: $s11; }
     &--xxxl   { font-size: $s9; }

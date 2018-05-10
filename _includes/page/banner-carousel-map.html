@@ -2,7 +2,7 @@
   <div class="site-header__offset"></div>
 
   <div class="banner__wrap">
-    <div class="container">
+    <div class="container container--no-padding">
       {% if page.banner.content %}
         {{page.banner.content | liquify}}
       {% else %}
@@ -33,7 +33,7 @@
     <div class="banner__map-wrap container">
       <div class="banner__map-frame">
         {% for icon in page.map %}
-        <a href="{{site.baseurl}}/{{icon.link}}" class="banner__map-icon" style="{{icon.position}}">
+        <a href="{{site.baseurl}}/{{icon.link}}" class="banner__map-icon{% if icon.lufthansa %} banner__map-icon-lufthansa{% endif %}" style="{{icon.position}}">
           <span class="banner__map-icon__icon"></span>
           <span class="banner__map-icon__label">{{icon.title}}</span>
         </a>

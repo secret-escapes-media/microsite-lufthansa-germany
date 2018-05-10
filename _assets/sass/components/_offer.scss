@@ -138,14 +138,50 @@ $offer-max-width: 600px;
   }
 
   // dark offer card styles
-   &#{&}--dark &__content {
-     border-left: 0;
-     border-right: 0;
-     border-bottom: 0;
-     background-color: lighten($grey-darkest,4);
-   }
-   &#{&}--dark &__separator           { background-color: $grey-dark; }
-   &#{&}--dark &__location            { color: $grey-lighter;}
-   &#{&}--dark &__content .core-title { color: $white;}
+  &--dark &__content {
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    background-color: lighten($grey-darkest,4);
+  }
+  &--dark &__separator           { background-color: $grey-dark; }
+  &--dark &__location            { color: $grey-lighter;}
+  &--dark &__content .core-title { color: $white;}
+
+
+  &--lg {
+    max-width: 100%;
+    background-color: $grey-darker;
+    color: $white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    overflow: hidden;
+    & .offer__content {
+      background-color: $grey-darker;
+      flex: 0 0 50%; max-width: 50%;
+      padding: $s6;
+      width: 50%;
+      border: 0;
+    }
+    & .offer__image {
+      flex: 0 0 50%; max-width: 50%;
+      width: 50%;
+    }
+    & .offer__location {
+      color: $grey-lighter;
+      font-size: 0.9em;
+    }
+    & .offer__bottom {
+      border-top: 1px solid $grey-dark;
+      margin-top: $s2;
+    }
+    & .offer__separator { background-color: $grey-dark; }
+    & .offer__link {
+      &:hover { background-color: rgba($black,.5); }
+    }
+  }
 
 }
