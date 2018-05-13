@@ -6,7 +6,7 @@ nav: true
 nav-order: 5
 
 intro: >
-  <p class="text--xl">Find out what your perfect German escape should be. Play the game below and discover our top recommendation based on your tastes.</p>
+  <p class="text--xl">Find your perfect German city below and get there with Lufthansa – flying to all of these cities from the UK.</p>
 
 game-results:
 
@@ -127,7 +127,7 @@ game-results:
           </div>
 
           <!-- Result offers & highlights -->
-          <div class="vpad--xxl">
+          <div class="vpad--xl">
 
             <div class="container container--xxxl">
               <div class="row row--gutters-lg">
@@ -153,12 +153,16 @@ game-results:
               {% for offer in result-offer %}
                 {% include offer/offer-lg.html %}
               {% endfor %}
+              <div class="space--xl"></div>
+              <div class="text--center">
+                <a href="{{site.baseurl}}/flights" class="btn btn--lg btn--orange">Find flights to {{result.title}}</a>
+              </div>
             </div>
           </div>
 
 
           <div class="container text--center">
-              <a id="track-game-reset" class="js-game__reset btn btn--solid btn--lg">Choose Again?</a>
+            <a id="track-game-reset" class="js-game__reset btn btn--solid btn--lg">Choose Again?</a>
           </div>
 
         </div>
