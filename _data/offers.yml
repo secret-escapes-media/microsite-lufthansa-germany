@@ -1,78 +1,115 @@
-- title: Spectacular Oslo & Bergen break with optional fjord tour
-  id: spectacular-oslo-bergen-break-with-optional-fjord-tour
-  page: munich
-  location: Scandic St. Olavs plass & Clarion Hotel Admiral, Norway
-  description: A fantastic four-night trip to Norway's Oslo and Bergen, with one of the world's most scenic train journeys between the two cities - including flights and an optional fjord tour
-  price: 459
-  price-description: per person for 4 nights
-  saved: 37
-  expires: 2020/04/14
-  link: https://www.secretescapes.com/spectacular-oslo-and-bergen-break-with-optional-fjord-tour-scandic-st-olavs-plass-and-clarion-hotel-admiral-norway-2/sale?gce_urg=0&utm_source=SE&utm_campaign=7_Norway_201703&utm_medium=Hub
-  question-1: pass # relaxed // active
-  question-2: pass # private // social
-  question-3: pass # grounds // beach
-  question-4: pass # beach club // golf
-  question-5: pass # self-sufficient // butler service
+################################################################################
+#
+#   munich
+#
+################################################################################
 
-- title: Farris Bad
-  id: farris-bad
+- title: Citadines Munich Arnulfpark
+  id: citadines-munich-arnulfpark
   page: munich
-  location: Larvik, Norway
-  description: Upscale beachfront stay at the first Nordic balneological health resort, with a supersized spa
-  price: 214
-  price-description: per room per night
-  saved: 33
-  expires: 2020/04/20
-  link: https://www.secretescapes.com/farris-bad-larvik-norway/sale?gce_urg=1&gce_scp=0&utm_source=SE&utm_medium=Hub&utm_campaign=12_Norway_201703
-  question-1: a # relaxed // active
-  question-2: pass # private // social
-  question-3: pass # grounds // beach
-  question-4: b # beach club // golf
-  question-5: b # self-sufficient // butler service
+  location: Munich, Germany
+  description: A stylish escape near the heart of hip Munich, staying in a bright and spacious studio or apartment near the central station, with breakfast and extras
+  price: 70
+  price-description: per studio per night
+  saved: 34
+  expires: 2018/05/23
+  link: https://www.secretescapes.com/citadines-munich-arnulfpark-munich-germany/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=German_May2018
 
-- title: First Hotel Marin
-  id: first-hotel-marin
+- title: Derag Livinghotel Am Viktualienmarkt
+  id: derag-livinghotel-am-viktualienmarkt
+  page: munich
+  location: Munich, Germany
+  description: A city-centre stay in Munich at a contemporary, design-conscious hotel, with breakfast and gym access
+  price: 76
+  price-description: per person per night
+  saved: 41
+  expires: 2018/05/15
+  link: https://www.secretescapes.com/derag-livinghotel-am-viktualienmarkt-munich-germany2/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=German_May2018
+
+
+
+################################################################################
+#
+#   frankfurt
+#
+################################################################################
+
+- title: Citadines City Centre Frankfurt
+  id: citadines-city-centre-frankfurt
   page: frankfurt
-  location: Bergen, Norway
-  description: A unique stay in the centre of picturesque Bergen, just a stone's throw from the harbour
-  price: 48
+  location: Frankfurt, Germany
+  description: A modern studio stay in the centre of Frankfurt, with breakfast, parking and complimentary lobby drinks
+  price: 33
+  price-description: per person per night
+  saved: 47
+  expires: 2018/05/15
+  link: https://www.secretescapes.com/citadines-city-centre-frankfurt-frankfurt-germany/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=German_May2018
+
+- title: Fleming's Hotel Frankfurt Main-Riverside
+  id: fleming-s-hotel-frankfurt-main-riverside
+  page: frankfurt
+  location: Frankfurt, Germany
+  description: Discover the charms of Frankfurt with a modern five-star hotel in a central location, including breakfast and more
+  price: 88
   price-description: per room per night
   saved: 43
-  expires: 2020/04/20
-  link: https://www.secretescapes.com/first-hotel-marin-bergen-norway/sale?gce_scp=1&utm_source=SE&utm_medium=Hub&utm_campaign=13_Norway_201704
-  question-1: pass # relaxed // active
-  question-2: b # private // social
-  question-3: b # grounds // beach
-  question-4: a # beach club // golf
-  question-5: pass # self-sufficient // butler service
+  expires: 2018/05/17
+  link: https://www.secretescapes.com/flemings-hotel-frankfurt-main-riverside-frankfurt-germany/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=German_May2018
 
-- title: Magic Hotel
-  id: magic-hotel
-  page: frankfurt
-  location: Bergen, Norway
-  description: A brand-new hip hotel in the centre of Bergen, designed by a top New York designer
-  price: 73
-  price-description: per room per night
-  saved: 55
-  expires: 2020/04/20
-  link: https://www.secretescapes.com/magic-hotel-bergen-norway/sale?gce_hpf=1&utm_source=SE&utm_medium=Hub&utm_campaign=14_Norway_201704
-  question-1: pass # relaxed // active
-  question-2: pass # private // social
-  question-3: a # grounds // beach
-  question-4: pass # beach club // golf
-  question-5: a # self-sufficient // butler service
 
-- title: Sola Strand Hotel
-  id: sola-strand-hotel
-  location: Sola, Norway
-  description: Discover one of the world's sixth best beaches on Norway's gorgeous coast, with breakfast and more
-  price: 79
+
+################################################################################
+#
+#   no page category
+#
+################################################################################
+
+- title: Maritim ProArte Hotel Berlin
+  id: maritim-pro-arte-hotel-berlin
+  location: Berlin, Germany
+  description: A contemporary stay in Berlin’s most central borough, with breakfast and more
+  price: 98
   price-description: per room per night
-  saved: 47
-  expires: 2020/04/20
-  link: https://www.secretescapes.com/sola-strand-hotel-sola-norway/sale?gce_hpf=1&utm_source=SE&utm_medium=Hub&utm_campaign=15_Norway_201704
-  question-1: pass # relaxed // active
-  question-2: pass # private // social
-  question-3: b # grounds // beach
-  question-4: b # beach club // golf
-  question-5: pass # self-sufficient // butler service
+  saved: 37
+  expires: 2018/05/22
+  link: https://www.secretescapes.com/maritim-proarte-hotel-berlin-berlin-germany/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=German_May2018
+
+- title: Hotel NH Berlin Alexanderplatz
+  id: hotel-nh-berlin-alexanderplatz
+  location: Berlin, Germany
+  description: Get away to a modern hotel set in Berlin's artist-filled Friedrichshain district, with breakfast and a welcome drink
+  price: 49
+  price-description: per person per night
+  saved: 27
+  expires: 2018/05/22
+  link: https://www.secretescapes.com/hotel-nh-berlin-alexanderplatz-berlin-germany/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=German_May2018
+
+- title: Park Hyatt Hamburg
+  id: park-hyatt-hamburg
+  location: Hamburg, Germany
+  description: A stylish stay in Hamburg, at a five-star Art Nouveau luxury, with breakfast and more
+  price: 80
+  price-description: per person per night
+  saved: 45
+  expires: 2018/05/22
+  link: https://www.secretescapes.com/park-hyatt-hamburg-hamburg-germany/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=German_May2018
+
+- title: Stage 47
+  id: stage-47
+  location: Düsseldorf, Germany
+  description: Chic film-themed interiors at a former A-list haunt in Düsseldorf, with breakfast and thoughtful perks
+  price: 44
+  price-description: per person per night
+  saved: 48
+  expires: 2018/05/22
+  link: https://www.secretescapes.com/stage-47-duesseldorf-germany/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=German_May2018
+
+- title: Hyatt Regency Düsseldorf
+  id: hyatt-regency-dusseldorf
+  location: Düsseldorf, Germany
+  description: A trendy Germany stay at a five-star hotel with a luxe spa in Düsseldorf's fashionable Media Harbour, including breakfast, spa and gym access and more
+  price: 88
+  price-description: per person per night
+  saved: 44
+  expires: 2018/05/15
+  link: https://www.secretescapes.com/hyatt-regency-duesseldorf-duesseldorf-germany-uk/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=German_May2018
