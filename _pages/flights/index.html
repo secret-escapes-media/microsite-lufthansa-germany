@@ -96,12 +96,20 @@ sections:
 
 
 
-<div class="bg--grey-lightest harvey">
-  <div class="harvey__text text--center">
-    <h2 class="title title--md text--600">Key Routes</h2>
-    {{page.key-routes}}
+<div class="bg--grey-lightest">
+  <div class="container container--100 container--no-padding">
+    <div class="row row--no-gutters row--valign-center">
+
+      <div class="col col--6 text--center">
+        <div class="boxpad--xl">
+          <h2 class="title title--md text--600">Key Routes</h2>
+          {{page.key-routes}}
+        </div>
+      </div>
+      <div class="col col--6 bg-img bg-img--4-3" style="background-image: url('{{site.img}}/content/{{page.id}}/routes.jpg');"></div>
+
+    </div>
   </div>
-  <div class="harvey__img bg-img bg-img--4-3" style="background-image: url('{{site.img}}/content/{{page.id}}/routes.jpg');"></div>
 </div>
 
 
