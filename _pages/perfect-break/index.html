@@ -5,15 +5,13 @@ title: Find your perfect break
 nav: true
 nav-order: 5
 
-intro: >
-  <p class="text--xl">Find your perfect German city below and get there with Lufthansa – flying to all of these cities from the UK.</p>
 
 game-results:
 
   - id: food-munich
     title: Munich
     content: You like the classic Bavarian charms of Munich! Pair this with the finest of German dining and you’re set for a decadent break in Bavaria.
-    #offer-id: farris-bad
+    offer-id: citadines-munich-arnulfpark
     highlights:
       - id: fine-dining
       - id: guided-tasting-tour
@@ -21,7 +19,7 @@ game-results:
   - id: food-frankfurt
     title: Frankfurt
     content: You like the sleek modernity of cool Frankfurt! From apple wine to concept restaurants, get under the skin of Frankfurt’s foodie scene.
-    #offer-id: farris-bad
+    offer-id: citadines-city-centre-frankfurt
     highlights:
       - id: apple-wine
       - id: frankfurt-food-spots
@@ -29,7 +27,7 @@ game-results:
   - id: social-munich
     title: Munich
     content: You like the classic Bavarian charms of Munich! Pair this with the iconic, unmissable experience of a Munich beer garden and hang with locals with a pils in hand.
-    #offer-id: farris-bad
+    offer-id: citadines-munich-arnulfpark
     highlights:
       - id: beer-gardens-for-beginners
       - id: guided-tasting-tour
@@ -37,7 +35,7 @@ game-results:
   - id: social-frankfurt
     title: Frankfurt
     content: You like the sleek modernity of cool Frankfurt! Socialise with locals in the cool neighborhoods that lie a little off-the-beaten-path, for in-the-know dining and quirky bars.
-    #offer-id: farris-bad
+    offer-id: fleming-s-hotel-frankfurt-main-riverside
     highlights:
       - id: frankfurt-food-spots
       - id: festivals
@@ -45,7 +43,7 @@ game-results:
   - id: explorer-munich
     title: Munich
     content: You like the classic Bavarian charms of Munich! Explore the luscious green spaces and remarkable architecture of the city, with riverside dining and charming walks to enjoy.
-    #offer-id: farris-bad
+    offer-id: derag-livinghotel-am-viktualienmarkt
     highlights:
       - id: green-city
       - id: architecture
@@ -53,7 +51,7 @@ game-results:
   - id: explorer-frankfurt
     title: Frankfurt
     content: You like the sleek modernity of cool Frankfurt! Explore the unique design and architecture of the city, taking you from the cutting edge to the old – perfect for urban wanderers.
-    #offer-id: farris-bad
+    offer-id: fleming-s-hotel-frankfurt-main-riverside
     highlights:
       - id: new-old-town
       - id: frankfurt-museum-embankment
@@ -61,7 +59,7 @@ game-results:
   - id: culture-munich
     title: Munich
     content: You like the classic Bavarian charms of Munich! Discover the famous galleries and museums of the city and explore Munich’s cultural prowess.
-    #offer-id: farris-bad
+    offer-id: derag-livinghotel-am-viktualienmarkt
     highlights:
       - id: art-galleries
       - id: architecture
@@ -69,19 +67,13 @@ game-results:
   - id: culture-frankfurt
     title: Frankfurt
     content: You like the sleek modernity of cool Frankfurt! Discover the cultural heritage of the city along museum embankment and a host of galleries that make Frankfurt a cultural delight.
-    #offer-id: farris-bad
+    offer-id: citadines-city-centre-frankfurt
     highlights:
       - id: new-old-town
       - id: frankfurt-museum-embankment
 ---
 
 
-
-<div class="bg--grey-darker vpad--xxl">
-  <div class="container container--xxl text--white text--center">
-    {{page.intro}}
-  </div>
-</div>
 
 
 
@@ -114,10 +106,10 @@ game-results:
     <!-- RESULT
     ==============-->
     <div class="game__result">
-      <div class="container">
+      <div class="container container--no-padding">
         {% for result in page.game-results %}
         <div class="result js-result-{{result.id}}">
-          <div class="container container--xl text--center text--white">
+          <div class="container container--no-padding container--xl text--center text--white">
             <div class="title title--xs">Your perfect break is...</div>
             <div class="space--xs"></div>
             <div class="title title--xl text--bold">{{result.title}}</div>
@@ -129,14 +121,14 @@ game-results:
           <!-- Result offers & highlights -->
           <div class="vpad--xl">
 
-            <div class="container container--xxxl">
-              <div class="row row--gutters-lg">
+            <div class="container container--no-padding container--xxxl">
+              <div class="row row--gutters-lg row--constant-6-6">
                 {% for highlightId in result.highlights %}
                   {% assign highlight = site.data.highlights | where: 'id',highlightId.id %}
                   {% for highlight in highlight %}
-                    <div class="col col--6">
+                    <div class="col">
                       <div class="poi bg--grey-darker text--white row row--valign-center row--no-gutters">
-                        <a href="{{site.baseurl}}/{{highlight.page}}" class="col col--4 bg-img bg-img--1-1" style="background-image: url({{site.img}}/content/{{highlight.page}}/poi/{{highlight.id}}.jpg);"></a>
+                        <a href="{{site.baseurl}}/{{highlight.page}}" class="col col--4 bg-img bg-img--16-9 bg-img--lg-1-1" style="background-image: url({{site.img}}/content/{{highlight.page}}/poi/{{highlight.id}}.jpg);"></a>
                         <div class="col col--8">
                           <div class="boxpad--lg">
                             <h4 class="title title--xxs text--500 text--upper">{{highlight.title}}</h4>
@@ -161,7 +153,7 @@ game-results:
           </div>
 
 
-          <div class="container text--center">
+          <div class="container container--no-padding text--center">
             <a id="track-game-reset" class="js-game__reset btn btn--solid btn--lg">Choose Again?</a>
           </div>
 

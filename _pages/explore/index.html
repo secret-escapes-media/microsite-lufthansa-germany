@@ -33,7 +33,7 @@ banner:
   title: Explore Germany
 
 intro: >
-  <p class="text--xl">Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+  <p class="text--xl">Find your perfect German city below and get there with Lufthansa – flying to all of these cities from the UK.</p>
 
 
 
@@ -143,11 +143,11 @@ sections:
         <h2 class="title title--xl text--600">{{section.title}}</h2>
         {{section.content}}
         <div class="space--sm"></div>
-        <a href="{{section.link}}" class="btn btn--solid">Find out more</a>
+        <a id="tracking-explore-button-{{section.id}}" href="{{section.link}}" class="btn btn--solid">Find out more</a>
       </div>
 
       <div class="bob__img">
-        <a href="{{section.link}}" class="bg-img bg-img--21-9" style="background-image: url('{{site.img}}/content/{{page.id}}/{{section.id}}/1.jpg');"></a>
+        <a id="tracking-explore-image-{{section.id}}" href="{{section.link}}" class="bg-img bg-img--21-9" style="background-image: url('{{site.img}}/content/{{page.id}}/{{section.id}}/1.jpg');"></a>
         <div class="row row--constant-6-6 row--no-gutters">
           <div class="col">
             <a href="{{section.link}}" class="bg-img bg-img--16-9" style="background-image: url('{{site.img}}/content/{{page.id}}/{{section.id}}/2.jpg');"></a>

@@ -161,14 +161,21 @@ $offer-max-width: 600px;
     overflow: hidden;
     & .offer__content {
       background-color: $grey-darker;
-      flex: 0 0 50%; max-width: 50%;
-      padding: $s6;
-      width: 50%;
+      padding: $s4;
       border: 0;
+      @include bp($xl){
+        flex: 0 0 50%; max-width: 50%;
+        padding: $s6;
+        width: 50%;
+        border: 0;
+      }
     }
     & .offer__image {
-      flex: 0 0 50%; max-width: 50%;
-      width: 50%;
+      width: 100%;
+      @include bp($xl){
+        flex: 0 0 50%; max-width: 50%;
+        width: 50%;
+      }
     }
     & .offer__location {
       color: $grey-lighter;

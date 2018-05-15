@@ -87,7 +87,7 @@ sections:
 
     {{page.intro}}
     <div class="space--sm"></div>
-    <a href="{{page.link}}" class="btn btn--lufthansa">View Lufthansa flights</a>
+    <a id="tracking-lufthansa-button-intro" href="{{page.link}}" class="btn btn--lufthansa">View Lufthansa flights</a>
 
   </div>
   {% include nav/page.html %}
@@ -128,7 +128,7 @@ sections:
     <div class="row row--4-4-4 row--gutters-lg">
       {% for feature in section.features %}
       <div class="col">
-        <a href="{{feature.link}}" class="bg-img bg-img--16-9" style="background-image: url({{site.img}}/content/{{page.id}}/{{feature.id}}.jpg);"></a>
+        <a id="tracking-lufthansa-feature-{{feature.id}}" href="{{feature.link}}" class="bg-img bg-img--16-9" style="background-image: url({{site.img}}/content/{{page.id}}/{{feature.id}}.jpg);"></a>
         <div class="space--md"></div>
         <h2 class="title title--xs text--500">{{feature.title}}</h2>
         {{feature.content}}
@@ -141,7 +141,7 @@ sections:
 
 
 <div class="container text--center">
-  <a href="{{page.link}}" class="btn btn--lg btn--lufthansa">View Lufthansa flights</a>
+  <a id="tracking-lufthansa-button-bottom" href="{{page.link}}" class="btn btn--lg btn--lufthansa">View Lufthansa flights</a>
   <div class="space--xxxl"></div>
 </div>
 
