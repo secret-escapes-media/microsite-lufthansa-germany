@@ -102,7 +102,7 @@ $logo-bp: 1000px;
       visibility: visible;
     }
     @include bp($nav-list-bp) {
-      width: auto;
+      width: 33.33%;
     }
   }
   &__list {
