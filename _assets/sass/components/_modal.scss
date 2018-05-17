@@ -143,7 +143,6 @@ $modaltransition-distance: 4em;
   &__frame {
     position: relative;
     z-index: $z-content;
-    display: flex;
     align-items: center;
     overflow-x: scroll;
     &:before {

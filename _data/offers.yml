@@ -34,17 +34,6 @@
 #
 ################################################################################
 
-- title: Citadines City Centre Frankfurt
-  id: citadines-city-centre-frankfurt
-  page: frankfurt
-  location: Frankfurt, Germany
-  description: A modern studio stay in the centre of Frankfurt, with breakfast, parking and complimentary lobby drinks
-  price: 33
-  price-description: per person per night
-  saved: 47
-  expires: 2018/05/15
-  link: https://www.secretescapes.com/citadines-city-centre-frankfurt-frankfurt-germany/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=German_May2018
-
 - title: Fleming's Hotel Frankfurt Main-Riverside
   id: fleming-s-hotel-frankfurt-main-riverside
   page: frankfurt
