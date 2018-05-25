@@ -15,16 +15,16 @@
   expires: 2018/05/23
   link: https://www.secretescapes.com/citadines-munich-arnulfpark-munich-germany/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=German_May2018
 
-- title: Derag Livinghotel Am Viktualienmarkt
-  id: derag-livinghotel-am-viktualienmarkt
+- title: Alpen Hotel München
+  id: alpen-hotel-munchen
   page: munich
   location: Munich, Germany
-  description: A city-centre stay in Munich at a contemporary, design-conscious hotel, with breakfast and gym access
-  price: 76
+  description: Explore the hip city of Munich from dead-central digs
+  price: 60
   price-description: per person per night
-  saved: 41
-  expires: 2018/05/15
-  link: https://www.secretescapes.com/derag-livinghotel-am-viktualienmarkt-munich-germany2/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=German_May2018
+  saved: 22
+  expires: 2018/05/29
+  link: https://www.secretescapes.com/alpen-hotel-muenchen-munich-germany-uk/sale?gce_fll=1&utm_source=SE_Media&utm_medium=May2018&utm_campaign=Germany
 
 
 
@@ -34,16 +34,16 @@
 #
 ################################################################################
 
-- title: Fleming's Hotel Frankfurt Main-Riverside
-  id: fleming-s-hotel-frankfurt-main-riverside
+- title: BOLD Hotel Frankfurt an der Messe
+  id: bold-hotel-frankfurt-an-der-messe
   page: frankfurt
   location: Frankfurt, Germany
-  description: Discover the charms of Frankfurt with a modern five-star hotel in a central location, including breakfast and more
-  price: 88
-  price-description: per room per night
-  saved: 43
-  expires: 2018/05/17
-  link: https://www.secretescapes.com/flemings-hotel-frankfurt-main-riverside-frankfurt-germany/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=German_May2018
+  description: A stylish apartment hotel stay in central Frankfurt
+  price: 26
+  price-description: per person per night
+  saved: 35
+  expires: 2018/05/29
+  link: https://www.secretescapes.com/bold-hotel-frankfurt-an-der-messe-frankfurt-germany/sale?gce_fll=1&utm_source=SE_Media&utm_medium=May2018&utm_campaign=Germany
 
 
 
@@ -93,12 +93,4 @@
   expires: 2018/05/22
   link: https://www.secretescapes.com/stage-47-duesseldorf-germany/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=German_May2018
 
-- title: Hyatt Regency Düsseldorf
-  id: hyatt-regency-dusseldorf
-  location: Düsseldorf, Germany
-  description: A trendy Germany stay at a five-star hotel with a luxe spa in Düsseldorf's fashionable Media Harbour, including breakfast, spa and gym access and more
-  price: 88
-  price-description: per person per night
-  saved: 44
-  expires: 2018/05/15
-  link: https://www.secretescapes.com/hyatt-regency-duesseldorf-duesseldorf-germany-uk/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=German_May2018
+
