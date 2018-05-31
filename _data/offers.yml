@@ -4,17 +4,6 @@
 #
 ################################################################################
 
-- title: Citadines Munich Arnulfpark
-  id: citadines-munich-arnulfpark
-  page: munich
-  location: Munich, Germany
-  description: A stylish escape near the heart of hip Munich, staying in a bright and spacious studio or apartment near the central station, with breakfast and extras
-  price: 70
-  price-description: per studio per night
-  saved: 34
-  expires: 2018/05/23
-  link: https://www.secretescapes.com/citadines-munich-arnulfpark-munich-germany/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=German_May2018
-
 - title: Alpen Hotel München
   id: alpen-hotel-munchen
   page: munich
@@ -23,7 +12,7 @@
   price: 60
   price-description: per person per night
   saved: 22
-  expires: 2018/05/29
+  expires: 2018/06/06
   link: https://www.secretescapes.com/alpen-hotel-muenchen-munich-germany-uk/sale?gce_fll=1&utm_source=SE_Media&utm_medium=May2018&utm_campaign=Germany
 
 
@@ -39,11 +28,22 @@
   page: frankfurt
   location: Frankfurt, Germany
   description: A stylish apartment hotel stay in central Frankfurt
-  price: 26
-  price-description: per person per night
+  price: 53
+  price-description: per room per night
   saved: 35
-  expires: 2018/05/29
+  expires: 2018/06/06
   link: https://www.secretescapes.com/bold-hotel-frankfurt-an-der-messe-frankfurt-germany/sale?gce_fll=1&utm_source=SE_Media&utm_medium=May2018&utm_campaign=Germany
+
+- title: Plaza Frankfurt Congress Hotel
+  id: plaza-frankfurt-congress-hotel
+  page: frankfurt
+  location: Frankfurt, Germany
+  description: A modern hotel with health club in historic Frankfurt
+  price: 29
+  price-description: per person per night
+  saved: 59
+  expires: 2018/06/04
+  link: https://www.secretescapes.com/plaza-frankfurt-congress-hotel-frankfurt-germany/sale?gce_fll=1&utm_source=SE_Media&utm_medium=May2018&utm_campaign=Germany
 
 
 
@@ -53,44 +53,43 @@
 #
 ################################################################################
 
-- title: Maritim ProArte Hotel Berlin
-  id: maritim-pro-arte-hotel-berlin
+- title: Swissôtel Berlin
+  id: swissotel-berlin
   location: Berlin, Germany
-  description: A contemporary stay in Berlin’s most central borough, with breakfast and more
-  price: 98
+  description: A modern hotel in hip Berlin, and a room with Kurfurstendamm views
+  price: 53
+  price-description: per person per night
+  saved: 47
+  expires: 2018/06/06
+  link: https://www.secretescapes.com/swissotel-berlin-berlin-germany/sale?gce_fll=1&utm_source=SE_Media&utm_medium=May2018&utm_campaign=Germany
+
+- title: The Midtown Cologne
+  id: the-midtown-cologne
+  location: Cologne, Germany
+  description: A hip stay at a new boutique hotel in central Cologne
+  price: 76
   price-description: per room per night
-  saved: 37
-  expires: 2018/05/22
-  link: https://www.secretescapes.com/maritim-proarte-hotel-berlin-berlin-germany/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=German_May2018
-
-- title: Hotel NH Berlin Alexanderplatz
-  id: hotel-nh-berlin-alexanderplatz
-  location: Berlin, Germany
-  description: Get away to a modern hotel set in Berlin's artist-filled Friedrichshain district, with breakfast and a welcome drink
-  price: 49
-  price-description: per person per night
-  saved: 27
-  expires: 2018/05/22
-  link: https://www.secretescapes.com/hotel-nh-berlin-alexanderplatz-berlin-germany/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=German_May2018
-
-- title: Park Hyatt Hamburg
-  id: park-hyatt-hamburg
-  location: Hamburg, Germany
-  description: A stylish stay in Hamburg, at a five-star Art Nouveau luxury, with breakfast and more
-  price: 80
-  price-description: per person per night
   saved: 45
-  expires: 2018/05/22
-  link: https://www.secretescapes.com/park-hyatt-hamburg-hamburg-germany/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=German_May2018
+  expires: 2018/06/06
+  link: https://www.secretescapes.com/the-midtown-cologne-cologne-germany/sale?utm_source=SE_Media&utm_medium=May2018&utm_campaign=Germany
 
-- title: Stage 47
-  id: stage-47
+- title: Max Brown Hotel Midtown
+  id: max-brown-hotel-midtown
   location: Düsseldorf, Germany
-  description: Chic film-themed interiors at a former A-list haunt in Düsseldorf, with breakfast and thoughtful perks
-  price: 44
+  description: Hip boutique digs in Düsseldorf's vibrant Japanese quarter
+  price: 34
   price-description: per person per night
-  saved: 48
-  expires: 2018/05/22
-  link: https://www.secretescapes.com/stage-47-duesseldorf-germany/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=German_May2018
+  saved: 42
+  expires: 2018/06/06
+  link: https://www.secretescapes.com/max-brown-hotel-midtown-duesseldorf-germany-2/sale?utm_source=SE_Media&utm_medium=May2018&utm_campaign=Germany
 
+- title: Hotel the YARD
+  id: hotel-the-yard
+  location: Berlin, Germany
+  description: A cool and calm design hotel in Berlin's hip Kreuzberg
+  price: 52
+  price-description: per person per night
+  saved: 35
+  expires: 2018/06/06
+  link: https://www.secretescapes.com/the-yard-hotel-berlin-germany/sale?gce_fll=1&utm_source=SE_Media&utm_medium=May2018&utm_campaign=Germany
 
