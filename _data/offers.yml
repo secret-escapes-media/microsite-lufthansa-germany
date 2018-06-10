@@ -4,16 +4,16 @@
 #
 ################################################################################
 
-- title: Alpen Hotel München
-  id: alpen-hotel-munchen
+- title: BOLD Hotel Giesing
+  id: bold-hotel-giesing
   page: munich
   location: Munich, Germany
-  description: Explore the hip city of Munich from dead-central digs
-  price: 60
-  price-description: per person per night
-  saved: 22
-  expires: 2018/06/06
-  link: https://www.secretescapes.com/alpen-hotel-muenchen-munich-germany-uk/sale?gce_fll=1&utm_source=SE_Media&utm_medium=May2018&utm_campaign=Germany
+  description: A hip design hotel on the edge of Munich
+  price: 61
+  price-description: per room per night
+  saved: 35
+  expires: 2018/06/13
+  link: https://www.secretescapes.com/bold-hotel-giesing-munich-germany/sale?utm_source=SE_Media&utm_medium=May2018&utm_campaign=Germany
 
 
 
@@ -23,16 +23,16 @@
 #
 ################################################################################
 
-- title: BOLD Hotel Frankfurt an der Messe
-  id: bold-hotel-frankfurt-an-der-messe
+- title: Adina Apartment Hotel Frankfurt Westend
+  id: adina-apartment-hotel-frankfurt-westend
   page: frankfurt
   location: Frankfurt, Germany
-  description: A stylish apartment hotel stay in central Frankfurt
-  price: 53
-  price-description: per room per night
-  saved: 35
-  expires: 2018/06/06
-  link: https://www.secretescapes.com/bold-hotel-frankfurt-an-der-messe-frankfurt-germany/sale?gce_fll=1&utm_source=SE_Media&utm_medium=May2018&utm_campaign=Germany
+  description: A modern city apartment-hotel in Frankfurt
+  price: 44
+  price-description: per person per night
+  saved: 39
+  expires: 2018/06/11
+  link: https://www.secretescapes.com/adina-apartment-hotel-frankfurt-westend-frankfurt-germany/sale?gce_fll=1&utm_source=SE_Media&utm_medium=May2018&utm_campaign=Germany
 
 - title: Plaza Frankfurt Congress Hotel
   id: plaza-frankfurt-congress-hotel
@@ -42,7 +42,7 @@
   price: 29
   price-description: per person per night
   saved: 59
-  expires: 2018/06/04
+  expires: 2018/06/11
   link: https://www.secretescapes.com/plaza-frankfurt-congress-hotel-frankfurt-germany/sale?gce_fll=1&utm_source=SE_Media&utm_medium=May2018&utm_campaign=Germany
 
 
@@ -53,16 +53,6 @@
 #
 ################################################################################
 
-- title: Swissôtel Berlin
-  id: swissotel-berlin
-  location: Berlin, Germany
-  description: A modern hotel in hip Berlin, and a room with Kurfurstendamm views
-  price: 53
-  price-description: per person per night
-  saved: 47
-  expires: 2018/06/06
-  link: https://www.secretescapes.com/swissotel-berlin-berlin-germany/sale?gce_fll=1&utm_source=SE_Media&utm_medium=May2018&utm_campaign=Germany
-
 - title: The Midtown Cologne
   id: the-midtown-cologne
   location: Cologne, Germany
@@ -70,7 +60,7 @@
   price: 76
   price-description: per room per night
   saved: 45
-  expires: 2018/06/06
+  expires: 2018/06/11
   link: https://www.secretescapes.com/the-midtown-cologne-cologne-germany/sale?utm_source=SE_Media&utm_medium=May2018&utm_campaign=Germany
 
 - title: Max Brown Hotel Midtown
@@ -80,16 +70,25 @@
   price: 34
   price-description: per person per night
   saved: 42
-  expires: 2018/06/06
+  expires: 2018/06/11
   link: https://www.secretescapes.com/max-brown-hotel-midtown-duesseldorf-germany-2/sale?utm_source=SE_Media&utm_medium=May2018&utm_campaign=Germany
 
-- title: Hotel the YARD
-  id: hotel-the-yard
+- title: SIDE Hamburg
+  id: side-hamburg
+  location: Hamburg, Germany
+  description: A five-star, city-central Hamburg hotel offering a luxe base for sightseeing
+  price: 49
+  price-description: per person per night
+  saved: 39
+  expires: 2018/06/11
+  link: https://www.secretescapes.com/side-hamburg-hamburg-germany/sale?gce_fll=1&utm_source=SE_Media&utm_medium=May2018&utm_campaign=Germany
+
+- title: NH Collection Berlin Mitte am Checkpoint Charlie
+  id: nh-collection-berlin-mitte-am-checkpoint-charlie
   location: Berlin, Germany
-  description: A cool and calm design hotel in Berlin's hip Kreuzberg
+  description: A contemporary spa hotel in the heart of Berlin
   price: 52
   price-description: per person per night
-  saved: 35
-  expires: 2018/06/06
-  link: https://www.secretescapes.com/the-yard-hotel-berlin-germany/sale?gce_fll=1&utm_source=SE_Media&utm_medium=May2018&utm_campaign=Germany
-
+  saved: 43
+  expires: 2018/06/11
+  link: https://www.secretescapes.com/nh-collection-berlin-mitte-am-checkpoint-charlie-berlin-germany/sale?gce_fll=1&utm_source=SE_Media&utm_medium=May2018&utm_campaign=Germany
