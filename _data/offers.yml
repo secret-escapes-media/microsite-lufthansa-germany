@@ -31,19 +31,19 @@
   price: 44
   price-description: per person per night
   saved: 39
-  expires: 2018/06/11
+  expires: 2018/06/19
   link: https://www.secretescapes.com/adina-apartment-hotel-frankfurt-westend-frankfurt-germany/sale?gce_fll=1&utm_source=SE_Media&utm_medium=May2018&utm_campaign=Germany
 
-- title: Plaza Frankfurt Congress Hotel
-  id: plaza-frankfurt-congress-hotel
+- title: Lindner Hotel & Residence Main Plaza
+  id: lindner-hotel-residence-main-plaza
   page: frankfurt
   location: Frankfurt, Germany
-  description: A modern hotel with health club in historic Frankfurt
-  price: 29
+  description: A Frankfurt city escape with chic digs along the river
+  price: 54
   price-description: per person per night
-  saved: 59
-  expires: 2018/06/11
-  link: https://www.secretescapes.com/plaza-frankfurt-congress-hotel-frankfurt-germany/sale?gce_fll=1&utm_source=SE_Media&utm_medium=May2018&utm_campaign=Germany
+  saved: 51
+  expires: 2018/06/19
+  link: https://www.secretescapes.com/lindner-hotel-and-residence-main-plaza-frankfurt-germany/sale?utm_source=SE_Media&utm_medium=May2018&utm_campaign=Germany
 
 
 
@@ -53,42 +53,25 @@
 #
 ################################################################################
 
-- title: The Midtown Cologne
-  id: the-midtown-cologne
-  location: Cologne, Germany
-  description: A hip stay at a new boutique hotel in central Cologne
-  price: 76
-  price-description: per room per night
-  saved: 45
-  expires: 2018/06/11
-  link: https://www.secretescapes.com/the-midtown-cologne-cologne-germany/sale?utm_source=SE_Media&utm_medium=May2018&utm_campaign=Germany
 
-- title: Max Brown Hotel Midtown
-  id: max-brown-hotel-midtown
-  location: Düsseldorf, Germany
-  description: Hip boutique digs in Düsseldorf's vibrant Japanese quarter
+- title: Derag Livinghotel Berlin Mitte
+  id: derag-livinghotel-berlin-mitte
+  location: Berlin, Germany
+  description:  An elegant riverside hotel in the heart of Berlin
+  price: 349
+  price-description: per person per for 4 nights
+  saved: 67
+  expires: 2018/06/20
+  link: https://www.secretescapes.com/derag-livinghotel-berlin-mitte-berlin-germany/sale?utm_source=SE_Media&utm_medium=May2018&utm_campaign=Germany
+
+- title: BURNS Fair & More & Leonardo Hotel Düsseldorf City Center
+  id: burns-fair-more-leonardo-hotel-düsseldorf-city-center
+  location: Cologne & Düsseldorf
+  description: A mix of Gothic and arty on two German city breaks
   price: 34
   price-description: per person per night
-  saved: 42
-  expires: 2018/06/11
-  link: https://www.secretescapes.com/max-brown-hotel-midtown-duesseldorf-germany-2/sale?utm_source=SE_Media&utm_medium=May2018&utm_campaign=Germany
+  saved: 67
+  expires: 2018/06/20
+  link: https://www.secretescapes.com/magical-cologne-and-duesseldorf-christmas-market-break1-discover-two-gorgeous-german-cities-with-train-transfers/sale?utm_source=SE_Media&utm_medium=May2018&utm_campaign=Germany
 
-- title: SIDE Hamburg
-  id: side-hamburg
-  location: Hamburg, Germany
-  description: A five-star, city-central Hamburg hotel offering a luxe base for sightseeing
-  price: 49
-  price-description: per person per night
-  saved: 39
-  expires: 2018/06/11
-  link: https://www.secretescapes.com/side-hamburg-hamburg-germany/sale?gce_fll=1&utm_source=SE_Media&utm_medium=May2018&utm_campaign=Germany
 
-- title: NH Collection Berlin Mitte am Checkpoint Charlie
-  id: nh-collection-berlin-mitte-am-checkpoint-charlie
-  location: Berlin, Germany
-  description: A contemporary spa hotel in the heart of Berlin
-  price: 52
-  price-description: per person per night
-  saved: 43
-  expires: 2018/06/11
-  link: https://www.secretescapes.com/nh-collection-berlin-mitte-am-checkpoint-charlie-berlin-germany/sale?gce_fll=1&utm_source=SE_Media&utm_medium=May2018&utm_campaign=Germany
