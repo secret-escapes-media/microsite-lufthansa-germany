@@ -4,16 +4,16 @@
 #
 ################################################################################
 
-- title: BOLD Hotel Giesing
-  id: bold-hotel-giesing
+- title: The Flushing Meadows Hotel
+  id: the-flushing-meadows-hotel
   page: munich
   location: Munich, Germany
-  description: A hip design hotel on the edge of Munich
-  price: 61
-  price-description: per room per night
-  saved: 35
-  expires: 2018/06/13
-  link: https://www.secretescapes.com/bold-hotel-giesing-munich-germany/sale?utm_source=SE_Media&utm_medium=May2018&utm_campaign=Germany
+  description: A hip designer hotel in the heart of Munich
+  price: 124
+  price-description: per studio per night
+  saved: 33
+  expires: 2018/06/25
+  link: https://www.secretescapes.com/the-flushing-meadows-hotel-munich-germany/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=Germany_June2018
 
 
 
@@ -23,17 +23,6 @@
 #
 ################################################################################
 
-- title: Adina Apartment Hotel Frankfurt Westend
-  id: adina-apartment-hotel-frankfurt-westend
-  page: frankfurt
-  location: Frankfurt, Germany
-  description: A modern city apartment-hotel in Frankfurt
-  price: 44
-  price-description: per person per night
-  saved: 39
-  expires: 2018/06/19
-  link: https://www.secretescapes.com/adina-apartment-hotel-frankfurt-westend-frankfurt-germany/sale?gce_fll=1&utm_source=SE_Media&utm_medium=May2018&utm_campaign=Germany
-
 - title: Lindner Hotel & Residence Main Plaza
   id: lindner-hotel-residence-main-plaza
   page: frankfurt
@@ -42,7 +31,7 @@
   price: 54
   price-description: per person per night
   saved: 51
-  expires: 2018/06/19
+  expires: 2018/06/25
   link: https://www.secretescapes.com/lindner-hotel-and-residence-main-plaza-frankfurt-germany/sale?utm_source=SE_Media&utm_medium=May2018&utm_campaign=Germany
 
 
@@ -61,17 +50,58 @@
   price: 349
   price-description: per person per for 4 nights
   saved: 67
-  expires: 2018/06/20
+  expires: 2018/06/25
   link: https://www.secretescapes.com/derag-livinghotel-berlin-mitte-berlin-germany/sale?utm_source=SE_Media&utm_medium=May2018&utm_campaign=Germany
 
-- title: BURNS Fair & More & Leonardo Hotel Düsseldorf City Center
-  id: burns-fair-more-leonardo-hotel-düsseldorf-city-center
-  location: Cologne & Düsseldorf
-  description: A mix of Gothic and arty on two German city breaks
-  price: 34
+- title: Almodovar Berlin
+  id: almodovar-berlin
+  location: Berlin, Germany
+  description: An eco-friendly stay in a creative corner of hip Berlin
+  price: 88
+  price-description: per room per night
+  saved: 39
+  expires: 2018/06/25
+  link: https://www.secretescapes.com/almodovar-berlin-berlin-germany/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=Germany_June2018
+
+- title: Steigenberger Hotel Treudelberg Hamburg
+  id: steigenberger-hotel-treudelberg-hamburg
+  location: Near Hamburg, Germany
+  description: A plush German stay north of Hamburg
+  price: 62
   price-description: per person per night
+  saved: 43
+  expires: 2018/06/25
+  link: https://www.secretescapes.com/steigenberger-hotel-treudelberg-hamburg-near-hamburg-germany/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=Germany_June2018
+
+- title: Romantik Hotel das Smolka
+  id: romantik-hotel-das-smolka
+  location: Hamburg, Germany
+  description: An elegant four-star boutique near Hamburg’s Alster Lakes
+  price: 54
+  price-description: per person per night
+  saved: 25
+  expires: 2018/06/25
+  link: https://www.secretescapes.com/romantik-hotel-das-smolka-hamburg-germany00/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=Germany_June2018
+
+- title: Vienna House QF Dresden
+  id: vienna-house-qf-dresden
+  location: Dresden, Germany
+  description: A hip stay with rooftop bar in the heart of historic Dresden
+  price: 48
+  price-description: per person per night
+  saved: 44
+  expires: 2018/06/25
+  link: https://www.secretescapes.com/vienna-house-qf-dresden-dresden-germany1/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=Germany_June2018
+
+- title: Hotel Q!
+  id: hotel-q
+  location: Berlin, Germany
+  description: A design-led urban hotel with spa in central Berlin
+  price: 97
+  price-description: per room per night
   saved: 67
-  expires: 2018/06/20
-  link: https://www.secretescapes.com/magical-cologne-and-duesseldorf-christmas-market-break1-discover-two-gorgeous-german-cities-with-train-transfers/sale?utm_source=SE_Media&utm_medium=May2018&utm_campaign=Germany
+  expires: 2018/06/25
+  link: https://www.secretescapes.com/hotel-q-berlin-germany/sale?utm_source=microsite&utm_medium=SE_media&utm_campaign=Germany_June2018
+
 
 
