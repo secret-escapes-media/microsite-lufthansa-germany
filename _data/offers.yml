@@ -12,7 +12,7 @@
   price: 89
   price-description: per room per night
   saved: 49
-  expires: 2018/07/10
+  expires: 2018/07/17
   link: https://www.secretescapes.com/ruby-lilly-hotel-munich-germany-europe/sale?utm_source=SE_Media&utm_medium=Germany&utm_campaign=June2018
 
 
@@ -23,17 +23,6 @@
 #
 ################################################################################
 
-- title: Scandic Frankfurt Museumsufer
-  id: scandic-frankfurt-museumsufer
-  page: frankfurt
-  location: Frankfurt, Germany
-  description: Sleek style and skyline views in Frankfurt's financial district
-  price: 40
-  price-description: per person per night
-  saved: 66
-  expires: 2018/07/10
-  link: https://www.secretescapes.com/scandic-frankfurt-museumsufer-frankfurt-am-main-germany/sale?utm_source=SE_Media&utm_medium=Germany&utm_campaign=June2018
-
 - title: Derag Livinghotel Frankfurt
   id: derag-livinghotel-frankfurt
   page: frankfurt
@@ -42,7 +31,7 @@
   price: 71
   price-description: per room per night
   saved: 35
-  expires: 2018/07/10
+  expires: 2018/07/17
   link: https://www.secretescapes.com/derag-livinghotel-frankfurt-frankfurt-germany/sale?utm_source=SE_Media&utm_medium=Germany&utm_campaign=June2018
 
 
@@ -61,47 +50,47 @@
   price: 72
   price-description: per person per night
   saved: 46
-  expires: 2018/07/02
+  expires: 2018/07/17
   link: https://www.secretescapes.com/ameron-hotel-speicherstadt-hamburg-germany/sale?utm_source=SE_Media&utm_medium=Germany&utm_campaign=June2018
 
-- title: Regent Berlin
-  id: regent-berlin
-  location: Berlin, Germany
-  description: Old-fashioned, five-star elegance in Berlin
-  price: 89
+- title: Excelsior Hotel Ernst
+  id: excelsior-hotel-ernst
+  location: Cologne, Germany
+  description: A glamorous five-star stay opposite Cologne Cathedral
+  price: 85
   price-description: per person per night
-  saved: 45
-  expires: 2018/07/02
-  link: https://www.secretescapes.com/regent-berlin-berlin-germany-europe/sale?utm_source=SE_Media&utm_medium=Germany&utm_campaign=June2018
+  saved: 57
+  expires: 2018/07/17
+  link: https://www.secretescapes.com/excelsior-hotel-ernst-cologne-germany/sale?utm_source=SE_Media&utm_medium=Germany&utm_campaign=July2018
 
-- title: Maritim Hotel Düsseldorf
-  id: maritim-hotel-düsseldorf
+- title: Stage 47
+  id: stage-47
   location: Düsseldorf, Germany
-  description: Stylish and contemporary digs on the outskirts of Düsseldorf
-  price: 39
+  description: Movie glamour at a boutique Düsseldorf bolthole
+  price: 44
   price-description: per person per night
-  saved: 51
-  expires: 2018/07/02
-  link: https://www.secretescapes.com/maritim-hotel-duesseldorf-duesseldorf-germany/sale?utm_source=SE_Media&utm_medium=Germany&utm_campaign=June2018
+  saved: 49
+  expires: 2018/07/17
+  link: https://www.secretescapes.com/stage-47-duesseldorf-germany/sale?utm_source=SE_Media&utm_medium=Germany&utm_campaign=July2018
 
-- title: Provocateur Berlin
-  id: provocateur-berlin
+- title: Maritim Hotel Berlin
+  id: maritim-hotel-berlin
   location: Berlin, Germany
-  description: A new seductive boutique hotel in West Berlin
+  description: An elegant stay near the Ku'Damm boulevard
   price: 49
   price-description: per person per night
-  saved: 40
-  expires: 2018/07/02
-  link: https://www.secretescapes.com/provocateur-berlin-berlin-germany/sale?utm_source=SE_Media&utm_medium=Germany&utm_campaign=June2018
+  saved: 38
+  expires: 2018/07/17
+  link: https://www.secretescapes.com/maritim-hotel-berlin-germany/sale?utm_source=SE_Media&utm_medium=Germany&utm_campaign=July2018
 
-- title: Ellington Hotel Berlin
-  id: ellington-hotel-berlin
+- title: The Westin Grand Berlin
+  id: the-westin-grand-berlin
   location: Berlin, Germany
-  description: A taste of 1920s Berlin at a listed Bauhaus hotel with chic interiors
-  price: 40
+  description: A glamorous five-star spa hotel in Berlin's Mitte district
+  price: 67
   price-description: per person per night
-  saved: 50
-  expires: 2018/07/02
-  link: https://www.secretescapes.com/ellington-hotel-berlin-berlin-germany/sale?utm_source=SE_Media&utm_medium=Germany&utm_campaign=June2018
+  saved: 37
+  expires: 2018/07/17
+  link: https://www.secretescapes.com/the-westin-grand-berlin-a-berlin-germany/sale?utm_source=SE_Media&utm_medium=Germany&utm_campaign=July2018
 
 
