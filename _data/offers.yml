@@ -4,16 +4,26 @@
 #
 ################################################################################
 
-- title: Ruby Lilly Hotel Munich
-  id: ruby-lilly-hotel-munich
+- title: Hotel München Palace
+  id: hotel-munchen-palace
   page: munich
   location: Munich, Germany
-  description: Urban design-led digs near the centre of Munich
-  price: 89
-  price-description: per room per night
-  saved: 49
-  expires: 2018/07/17
-  link: https://www.secretescapes.com/ruby-lilly-hotel-munich-germany-europe/sale?utm_source=SE_Media&utm_medium=Germany&utm_campaign=June2018
+  description: An elegant five-star Bogenhausen neighbourhood hotel close to the centre of Munich, with breakfast, spa access and a suite option
+  price: 100
+  price-description: per person per night
+  saved: 48
+  expires: 2018/07/24
+  link: https://www.secretescapes.com/hotel-muenchen-palace-munich-germany/sale?utm_source=SE_Media&utm_medium=EnglishHeritage&utm_campaign=July2018
+
+- title: Arcona LIVING MÜNCHEN
+  id: arcona-living-munchen
+  page: munich
+  location: Munich, Germany
+  description: A stylish stay at a former cinema-turned-contemporary hotel in the hip Bavarian capital, with breakfast and more
+  price: 48
+  price-description: per person per night
+  expires: 2018/07/24
+  link: https://www.secretescapes.com/arcona-living-munchen-bayern-germany5/sale?utm_source=SE_Media&utm_medium=EnglishHeritage&utm_campaign=July2018
 
 
 
@@ -23,16 +33,16 @@
 #
 ################################################################################
 
-- title: Derag Livinghotel Frankfurt
-  id: derag-livinghotel-frankfurt
+- title: 25hours Hotel Frankfurt The Goldman
+  id: hours-hotel-frankfurt-the-goldman
   page: frankfurt
   location: Frankfurt, Germany
-  description: A modern stay near Frankfurt’s old town and riverside museums
-  price: 71
-  price-description: per room per night
-  saved: 35
-  expires: 2018/07/17
-  link: https://www.secretescapes.com/derag-livinghotel-frankfurt-frankfurt-germany/sale?utm_source=SE_Media&utm_medium=Germany&utm_campaign=June2018
+  description: A colourful and contemporary Frankfurt stay in the city’s creative hub, including breakfast, a welcome drink and bicycle rental
+  price: 40
+  price-description: per person per night
+  saved: 52
+  expires: 2018/07/24
+  link: https://www.secretescapes.com/25hours-hotel-the-goldman-frankfurt-germany/sale?utm_source=SE_Media&utm_medium=EnglishHeritage&utm_campaign=July2018
 
 
 
@@ -42,17 +52,6 @@
 #
 ################################################################################
 
-
-- title: AMERON Hotel Speicherstadt
-  id: ameron-hotel-speicherstadt
-  location: Hamburg, Germany
-  description: A Hamburg stay in Speicherstadt, the world's largest warehouse district
-  price: 72
-  price-description: per person per night
-  saved: 46
-  expires: 2018/07/17
-  link: https://www.secretescapes.com/ameron-hotel-speicherstadt-hamburg-germany/sale?utm_source=SE_Media&utm_medium=Germany&utm_campaign=June2018
-
 - title: Excelsior Hotel Ernst
   id: excelsior-hotel-ernst
   location: Cologne, Germany
@@ -60,7 +59,7 @@
   price: 85
   price-description: per person per night
   saved: 57
-  expires: 2018/07/17
+  expires: 2018/07/24
   link: https://www.secretescapes.com/excelsior-hotel-ernst-cologne-germany/sale?utm_source=SE_Media&utm_medium=Germany&utm_campaign=July2018
 
 - title: Stage 47
@@ -70,18 +69,8 @@
   price: 44
   price-description: per person per night
   saved: 49
-  expires: 2018/07/17
+  expires: 2018/07/24
   link: https://www.secretescapes.com/stage-47-duesseldorf-germany/sale?utm_source=SE_Media&utm_medium=Germany&utm_campaign=July2018
-
-- title: Maritim Hotel Berlin
-  id: maritim-hotel-berlin
-  location: Berlin, Germany
-  description: An elegant stay near the Ku'Damm boulevard
-  price: 49
-  price-description: per person per night
-  saved: 38
-  expires: 2018/07/17
-  link: https://www.secretescapes.com/maritim-hotel-berlin-germany/sale?utm_source=SE_Media&utm_medium=Germany&utm_campaign=July2018
 
 - title: The Westin Grand Berlin
   id: the-westin-grand-berlin
@@ -90,7 +79,24 @@
   price: 67
   price-description: per person per night
   saved: 37
-  expires: 2018/07/17
+  expires: 2018/07/24
   link: https://www.secretescapes.com/the-westin-grand-berlin-a-berlin-germany/sale?utm_source=SE_Media&utm_medium=Germany&utm_campaign=July2018
 
+- title: Residences at Park Hyatt Hamburg
+  id: residences-at-park-hyatt-hamburg
+  location: Hamburg, Germany
+  description: An ultra-stylish, five-star apartment at a glamorous, central Hamburg hotel, with a sleek spa and fine dining - including breakfast and access to the wellness facilities
+  price: 170
+  price-description: per apartment per night
+  saved: 51
+  expires: 2018/07/24
+  link: https://www.secretescapes.com/residences-at-park-hyatt-hamburg-hamburg-germany/sale?utm_source=SE_Media&utm_medium=EnglishHeritage&utm_campaign=July2018
 
+- title: Hotel OTTO
+  id: hotel-otto
+  location: Berlin, Germany
+  description: An award-winning boutique hotel in Berlin's historic Charlottenburg district - breakfast and more included
+  price: 44
+  price-description: per person per night
+  expires: 2018/07/24
+  link: https://www.secretescapes.com/hotel-otto-berlin-germany-3/sale?utm_source=SE_Media&utm_medium=EnglishHeritage&utm_campaign=July2018
