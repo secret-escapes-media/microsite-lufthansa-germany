@@ -114,7 +114,7 @@ layout: default
     </div>
 
     <div class="row row--xl-6-6 row--gutters-lg vpad--md">
-      {% assign offers = site.data.offers | where:'page',page.id | sort: 'saved' | reverse %}
+      {% assign offers = site.data.offers | where:'page',page.id | sort: 'price' %}
       {% for offer in offers %}
         <div class="col">
           {% include offer/offer.html %}
