@@ -4,17 +4,6 @@
 #
 ################################################################################
 
-- title: Hotel München Palace
-  id: hotel-munchen-palace
-  page: munich
-  location: Munich, Germany
-  description: An elegant five-star Bogenhausen neighbourhood hotel close to the centre of Munich, with breakfast, spa access and a suite option
-  price: 100
-  price-description: per person per night
-  saved: 48
-  expires: 2018/07/24
-  link: https://www.secretescapes.com/hotel-muenchen-palace-munich-germany/sale?utm_source=SE_Media&utm_medium=EnglishHeritage&utm_campaign=July2018
-
 - title: Arcona LIVING MÜNCHEN
   id: arcona-living-munchen
   page: munich
@@ -22,7 +11,7 @@
   description: A stylish stay at a former cinema-turned-contemporary hotel in the hip Bavarian capital, with breakfast and more
   price: 48
   price-description: per person per night
-  expires: 2018/07/24
+  expires: 2018/07/31
   link: https://www.secretescapes.com/arcona-living-munchen-bayern-germany5/sale?utm_source=SE_Media&utm_medium=EnglishHeritage&utm_campaign=July2018
 
 
@@ -41,8 +30,18 @@
   price: 40
   price-description: per person per night
   saved: 52
-  expires: 2018/07/24
+  expires: 2018/07/31
   link: https://www.secretescapes.com/25hours-hotel-the-goldman-frankfurt-germany/sale?utm_source=SE_Media&utm_medium=EnglishHeritage&utm_campaign=July2018
+
+- title: Citadines City Centre Frankfurt
+  id: citadines-city-centre-frankfurt
+  page: frankfurt
+  location: Frankfurt, Germany
+  description: A modern studio stay in the centre of Frankfurt, with breakfast, parking and complimentary lobby drinks
+  price: 34
+  price-description: per person per night
+  expires: 2018/07/31
+  link: https://www.secretescapes.com/citadines-city-centre-frankfurt-frankfurt-germany/sale?utm_source=SE_Media&utm_medium=EnglishHeritage&utm_campaign=July2018
 
 
 
@@ -52,51 +51,42 @@
 #
 ################################################################################
 
-- title: Excelsior Hotel Ernst
-  id: excelsior-hotel-ernst
-  location: Cologne, Germany
-  description: A glamorous five-star stay opposite Cologne Cathedral
-  price: 85
-  price-description: per person per night
-  saved: 57
-  expires: 2018/07/24
-  link: https://www.secretescapes.com/excelsior-hotel-ernst-cologne-germany/sale?utm_source=SE_Media&utm_medium=Germany&utm_campaign=July2018
-
-- title: Stage 47
-  id: stage-47
-  location: Düsseldorf, Germany
-  description: Movie glamour at a boutique Düsseldorf bolthole
-  price: 44
-  price-description: per person per night
-  saved: 49
-  expires: 2018/07/24
-  link: https://www.secretescapes.com/stage-47-duesseldorf-germany/sale?utm_source=SE_Media&utm_medium=Germany&utm_campaign=July2018
-
-- title: The Westin Grand Berlin
-  id: the-westin-grand-berlin
-  location: Berlin, Germany
-  description: A glamorous five-star spa hotel in Berlin's Mitte district
-  price: 67
-  price-description: per person per night
-  saved: 37
-  expires: 2018/07/24
-  link: https://www.secretescapes.com/the-westin-grand-berlin-a-berlin-germany/sale?utm_source=SE_Media&utm_medium=Germany&utm_campaign=July2018
-
 - title: Residences at Park Hyatt Hamburg
   id: residences-at-park-hyatt-hamburg
   location: Hamburg, Germany
   description: An ultra-stylish, five-star apartment at a glamorous, central Hamburg hotel, with a sleek spa and fine dining - including breakfast and access to the wellness facilities
-  price: 170
+  price: 161
   price-description: per apartment per night
-  saved: 51
-  expires: 2018/07/24
+  saved: 54
+  expires: 2018/07/28
   link: https://www.secretescapes.com/residences-at-park-hyatt-hamburg-hamburg-germany/sale?utm_source=SE_Media&utm_medium=EnglishHeritage&utm_campaign=July2018
 
-- title: Hotel OTTO
-  id: hotel-otto
+- title: Moevenpick Hamburg
+  id: moevenpick-hamburg
+  location: Hamburg, Germany
+  description: A distinctive and stylish hotel set in a 19th-century water tower in Hamburg, with stunning views over the city - includes breakfast, a welcome drink and more
+  price: 90
+  price-description: per room per night
+  saved: 47
+  expires: 2018/07/31
+  link: https://www.secretescapes.com/moevenpick-hamburg-hotel-hamburg-germany/sale?utm_source=SE_Media&utm_medium=EnglishHeritage&utm_campaign=July2018
+
+- title: Seminaris CampusHotel Berlin
+  id: seminaris-campus-hotel-berlin
   location: Berlin, Germany
-  description: An award-winning boutique hotel in Berlin's historic Charlottenburg district - breakfast and more included
-  price: 44
+  description: Enjoy a modern stay in the quiet Dahlem district of Berlin, with an onsite sauna and fantastic transport links
+  price: 34
   price-description: per person per night
-  expires: 2018/07/24
-  link: https://www.secretescapes.com/hotel-otto-berlin-germany-3/sale?utm_source=SE_Media&utm_medium=EnglishHeritage&utm_campaign=July2018
+  saved: 47
+  expires: 2018/07/31
+  link: https://www.secretescapes.com/seminaris-campushotel-berlin-berlin-germany/sale?utm_source=SE_Media&utm_medium=EnglishHeritage&utm_campaign=July2018
+
+- title: Living Hotel de Medici
+  id: living-hotel-de-medici
+  location: Düsseldorf, Germany
+  description: A five-star monastery turned luxury hotel in Dusseldorf’s Old Town – with breakfast, sauna access and more
+  price: 148
+  price-description: per room per night
+  saved: 36
+  expires: 2018/07/31
+  link: https://www.secretescapes.com/living-hotel-de-medici-duesseldorf-germany/sale?utm_source=SE_Media&utm_medium=EnglishHeritage&utm_campaign=July2018
